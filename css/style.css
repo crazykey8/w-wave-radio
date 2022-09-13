@@ -236,11 +236,13 @@ body {
 }
 
 .top__link:hover {
+  padding: 0;
   background-color: transparent;
   color: var(--color-regular-purple);
 }
 
 .top__link:active {
+  padding: 0;
   color: var(--color-bold-purple);
 }
 
@@ -333,11 +335,13 @@ body {
 }
 
 .bottom__link:hover {
+  padding: 0;
   background-color: transparent;
   color: var(--color-regular-purple);
 }
 
 .bottom__link:active {
+  padding: 0;
   color: var(--color-bold-purple);
 }
 
@@ -440,4 +444,127 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: var(--color-regular-purple);
+}
+
+/* hero */
+
+.hero {
+  background-color: var(--color-white);
+  padding-bottom: 34px;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__text {
+  max-width: 635px;
+  padding-top: 10px;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  color: var(--color-bold-blue);
+}
+
+.hero__title-italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.hero__descr {
+  margin: 0;
+  margin-bottom: 70px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-bold-blue);
+}
+
+.hero__descr-link {
+  position: relative;
+  outline: none;
+  color: var(--color-regular-purple);
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.hero__descr-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: width .2s ease-in-out, background-color .2s ease-in-out, padding .2s ease-in-out;
+}
+
+.hero__descr-link:focus {
+  padding: 3px;
+  background-color: var(--color-light-purple);
+  color: var(--color-white);
+}
+
+.hero__descr-link:hover {
+  padding: 0;
+  background-color: transparent;
+  color: var(--color-regular-purple);
+}
+
+.hero__descr-link:active {
+  padding: 0;
+  background-color: transparent;
+  color: var(--color-bold-purple);
+}
+
+.hero__descr-link:hover::after {
+  width: 100%;
+  background-color: var(--color-regular-purple);
+}
+
+.hero__descr-link:active::after {
+  width: 100%;
+  background-color: var(--color-bold-purple);
+}
+
+.hero__btn {
+  padding: 23px 52px;
+  border-radius: 40px;
+  border: 2px solid var(--color-regular-purple);
+  outline: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: var(--color-regular-purple);
+  color: var(--color-white);
+  transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+.hero__btn:focus {
+  background-color: var(--color-light-purple);
+}
+
+.hero__btn:hover {
+  border-color: var(--color-light-purple);
+  background-color: var(--color-light-purple);
+}
+
+.hero__btn:active {
+  border-color: var(--color-bold-purple);
+  background-color: var(--color-bold-purple);
+}
+
+
+
+.hero__picture {
+  padding-top: 30px;
 }
