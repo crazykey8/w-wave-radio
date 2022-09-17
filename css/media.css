@@ -75,6 +75,38 @@
   .podcast__info {
     width: 71%;
   }
+
+  .broadcast__container {
+    padding: 0 40px;
+  }
+
+  .broadcast__select {
+    margin-right: 27px;
+  }
+
+  .broadcast__list {
+    max-width: 540px;
+  }
+
+  .broadcast__item {
+    margin-bottom: 28px;
+  }
+
+  .broadcast__item:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
+  .broadcast__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+
+  .broadcast__archive {
+    bottom: 318px;
+  }
+
+  .broadcast__btn-archive {
+    padding: 11px 54px;
+  }
 }
 
 @media (max-width: 902px) {
@@ -153,6 +185,41 @@
 
   .podcast__info {
     width: 79%;
+  }
+
+  .broadcast {
+    position: relative;
+    padding-bottom: 28px;
+  }
+
+  .broadcast::before {
+    content: '';
+    position: absolute;
+    bottom: 156px;
+    border: 1px solid var(--color-light-gray);
+    width: 100%;
+  }
+
+  .broadcast__container {
+    padding: 0 18px;
+  }
+
+  .broadcast__select {
+    margin-right: 0;
+    margin-bottom: 38px;
+  }
+
+  .broadcast__archive {
+    position: relative;
+    bottom: 0;
+    left: 18%;
+    width: 395px;
+    margin-top: 60px;
+    padding-top: 0;
+    padding-left: 90px;
+    background-image: url('../img/broadcast/mic-tablet.png');
+    background-repeat: no-repeat;
+    background-position: left center;
   }
 }
 
@@ -336,6 +403,109 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .broadcast {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  .broadcast__container {
+    padding: 0px 31px;
+  }
+
+  .broadcast__author {
+    margin: 0;
+    margin-bottom: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .broadcast__select {
+    margin-bottom: 21px;
+  }
+
+  .broadcast__picture {
+    width: auto;
+    height: auto;
+  }
+
+  .broadcast__picture img {
+    height: auto;
+  }
+
+  .broadcast__article {
+    max-width: 113px;
+    min-height: 149px;
+    justify-content: space-between;
+  }
+
+  .broadcast__info {
+    padding: 10px 10px;
+    min-height: 100px;
+  }
+
+  .broadcast__article-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .broadcast__article-date {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 9px;
+  }
+
+  .broadcast__more {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--color-regular-purple);
+  }
+
+  .broadcast__more::after {
+    height: 50px;
+  }
+
+  .broadcast__more::before {
+    inset: -2px;
+  }
+
+  .broadcast__more svg {
+    fill: var(--color-regular-purple);
+  }
+
+  .broadcast::before {
+    bottom: 166px;
+  }
+
+  .broadcast__archive {
+    display: flex;
+    flex-direction: column-reverse;
+    left: 0;
+    bottom: 34px;
+    width: 395px;
+    margin-top: 65px;
+    background-image: url('../img/broadcast/mic-mobile.png');
+  }
+
+  .broadcast__btn-archive {
+    max-width: 110px;
+    margin-bottom: 0;
+    margin-top: 6px;
+    padding: 8px 31px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .broadcast__archive-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
   }
 
 

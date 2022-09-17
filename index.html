@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon/favicon.ico">
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./libs/styles/choices.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
 </head>
@@ -221,7 +222,7 @@
     </section>
     <section class="podcast">
       <div class="container podcast__container">
-        <h2 class="title">
+        <h2 class="title podcast__subtitle">
           Подкасты
         </h2>
         <ul class="list-reset podcast__list">
@@ -704,7 +705,200 @@
         </div>
       </div>
     </section>
+    <section class="broadcast">
+      <div class="container broadcast__container">
+        <div class="broadcast__select">
+          <h2 class="title broadcast__title">
+            Передачи
+          </h2>
+          <p class="broadcast__author">
+            Автор:
+          </p>
+          <select name="author" class="broadcast__author-select">
+            <option>Дмитрий Гутенберг</option>
+            <option>Татьяна Флеганова</option>
+            <option>Анна Васильевна</option>
+            <option>Пётр Дмитриевский</option>
+          </select>
+        </div>
+        <div class="broadcast__content">
+          <ul class="list-reset broadcast__list">
+            <li class="broadcast__item">
+              <div class="broadcast__article">
+                <picture class="broadcast__picture">
+                  <source media="(max-width: 576px)" srcset="./img/broadcast/broadcast-1-mobile.jpg">
+                  <img src="./img/broadcast/broadcast-1-desktop.jpg" alt="Постер передачи">
+                </picture>
+                <div class="broadcast__info">
+                  <div class="broadcast__info-text">
+                    <h3 class="broadcast__article-title">
+                      О&nbsp;людях и&nbsp;книгах
+                    </h3>
+                    <p class="broadcast__article-date">
+                      Анонсируется отдельно
+                    </p>
+                  </div>
+                  <a href="#" class="broadcast__more">
+                    <span class="broadcast__more-text">
+                      Подробнее
+                    </span>
+                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="broadcast__item">
+              <div class="broadcast__article">
+                <picture class="broadcast__picture">
+                  <source media="(max-width: 576px)" srcset="./img/broadcast/broadcast-2-mobile.jpg">
+                  <img src="./img/broadcast/broadcast-2-desktop.jpg" alt="Постер передачи">
+                </picture>
+                <div class="broadcast__info">
+                  <div class="broadcast__info-text">
+                    <h3 class="broadcast__article-title">
+                      Графомания td
+                    </h3>
+                    <p class="broadcast__article-date">
+                      По&nbsp;понедельникам в&nbsp;10:00
+                    </p>
+                  </div>
+                  <a href="#" class="broadcast__more">
+                    <span class="broadcast__more-text">
+                      Подробнее
+                    </span>
+                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="broadcast__item">
+              <div class="broadcast__article">
+                <picture class="broadcast__picture">
+                  <source media="(max-width: 576px)" srcset="./img/broadcast/broadcast-3-mobile.jpg">
+                  <img src="./img/broadcast/broadcast-3-desktop.jpg" alt="Постер передачи">
+                </picture>
+                <div class="broadcast__info">
+                  <div class="broadcast__info-text">
+                    <h3 class="broadcast__article-title">
+                      Не&nbsp;Рим, не&nbsp;Троя
+                    </h3>
+                    <p class="broadcast__article-date">
+                      По&nbsp;вторникам в&nbsp;12:00
+                    </p>
+                  </div>
+                  <a href="#" class="broadcast__more">
+                    <span class="broadcast__more-text">
+                      Подробнее
+                    </span>
+                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="broadcast__item">
+              <div class="broadcast__article">
+                <picture class="broadcast__picture">
+                  <source media="(max-width: 576px)" srcset="./img/broadcast/broadcast-4-mobile.jpg">
+                  <img src="./img/broadcast/broadcast-4-desktop.jpg" alt="Постер передачи">
+                </picture>
+                <div class="broadcast__info">
+                 <div class="broadcast__info-text">
+                    <h3 class="broadcast__article-title">
+                      Эрудит
+                    </h3>
+                    <p class="broadcast__article-date">
+                      По&nbsp;пятницам в&nbsp;17:00
+                    </p>
+                 </div>
+                  <a href="#" class="broadcast__more">
+                    <span class="broadcast__more-text">
+                      Подробнее
+                    </span>
+                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="broadcast__item">
+              <div class="broadcast__article">
+                <picture class="broadcast__picture">
+                  <source media="(max-width: 576px)" srcset="./img/broadcast/broadcast-5-mobile.jpg">
+                  <img src="./img/broadcast/broadcast-5-desktop.jpg" alt="Постер передачи">
+                </picture>
+                <div class="broadcast__info">
+                  <div class="broadcast__info-text">
+                    <h3 class="broadcast__article-title">
+                      Тонкости эпох
+                    </h3>
+                    <p class="broadcast__article-date">
+                      По&nbsp;субботам в&nbsp;10:00
+                    </p>
+                  </div>
+                  <a href="#" class="broadcast__more">
+                    <span class="broadcast__more-text">
+                      Подробнее
+                    </span>
+                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="broadcast__item">
+              <div class="broadcast__article">
+                <picture class="broadcast__picture">
+                  <source media="(max-width: 576px)" srcset="./img/broadcast/broadcast-6-mobile.jpg">
+                  <img src="./img/broadcast/broadcast-6-desktop.jpg" alt="Постер передачи">
+                </picture>
+                <div class="broadcast__info">
+                  <div class="broadcast__info-text">
+                    <h3 class="broadcast__article-title">
+                      Живые мысли
+                    </h3>
+                    <p class="broadcast__article-date">
+                      По&nbsp;воскресеньям в&nbsp;15:30
+                    </p>
+                  </div>
+                  <a href="#" class="broadcast__more">
+                    <span class="broadcast__more-text">
+                      Подробнее
+                    </span>
+                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="broadcast__archive">
+          <a href="#" class="broadcast__btn-archive">
+            Архив
+          </a>
+          <p class="broadcast__archive-descr">
+            В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
+  <script src="./libs/scripts/choices.min.js"></script>
   <script src="./scripts/script.js"></script>
 </body>
 
