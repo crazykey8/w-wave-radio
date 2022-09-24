@@ -71,7 +71,7 @@
               fill="#6D31EE" />
           </svg>
         </a>
-        <div class="burger">
+        <div id="burger" class="burger">
           <span class="burger__line"></span>
         </div>
         <nav class="top__nav">
@@ -104,14 +104,17 @@
           </ul>
         </nav>
         <div class="top__wrapper">
-          <button class="btn-reset top__search" aria-label="Поиск">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M20.9999 21L16.6499 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </button>
+          <form action="#" class="top__form">
+            <input class="top__input" type="text" placeholder="Поиск по сайту">
+            <button class="btn-reset top__search" aria-label="Поиск">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M20.9999 21L16.6499 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </form>
           <button class="btn-reset top__auth">
             Вход
           </button>
@@ -168,6 +171,20 @@
                 </clipPath>
               </defs>
             </svg>
+            <svg class="btn__pause-small" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24531_3491)">
+                <path
+                  d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z" />
+                <rect x="9" y="8" width="2" height="8" rx="1" fill="white" />
+                <rect x="13" y="8" width="2" height="8" rx="1" fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_24531_3491">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
           </button>
           <button class="btn-reset btn__playaudio btn__stream" aria-label="Сейчас в эфире 'Как так?'">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -177,6 +194,20 @@
               </g>
               <defs>
                 <clipPath id="clip0_24531_5439">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg class="btn__pause-small" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24531_3491)">
+                <path
+                  d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z" />
+                <rect x="9" y="8" width="2" height="8" rx="1" fill="white" />
+                <rect x="13" y="8" width="2" height="8" rx="1" fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_24531_3491">
                   <rect width="24" height="24" fill="white" />
                 </clipPath>
               </defs>
@@ -232,11 +263,11 @@
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-1-mobile.jpg">
                 <img src="./img/podcast/podcast-1-desktop.jpg" alt="Картинка альбома">
               </picture>
-              <time class="podcast__date" datetime="2021-06-14 15:43">14 июня</time>
+              <time class="podcast__date" datetime="06-14">14 июня</time>
               <div class="podcast__info">
                 <div class="podcast__top">
                   <div class="podcast__text">
-                    <time class="podcast__time" datetime="2021-06-14 15:43">
+                    <time class="podcast__time" datetime="15:43">
                       15:43
                     </time>
                     <h3 class="podcast__title">
@@ -252,6 +283,12 @@
                       <circle cx="24" cy="24" r="20" stroke-width="2" />
                       <path
                         d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" />
+                    </svg>
+                    <svg class="podcast__btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                      <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                     </svg>
                   </button>
                 </div>
@@ -290,11 +327,11 @@
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-2-mobile.jpg">
                 <img src="./img/podcast/podcast-2-desktop.jpg" alt="Картинка альбома">
               </picture>
-              <time class="podcast__date" datetime="2021-06-11 5:32">11 июня</time>
+              <time class="podcast__date" datetime="06-11">11 июня</time>
               <div class="podcast__info">
                 <div class="podcast__top">
                   <div class="podcast__text">
-                    <time class="podcast__time" datetime="2021-06-15 5:32">
+                    <time class="podcast__time" datetime="05:32">
                       5:32
                     </time>
                     <h3 class="podcast__title">
@@ -311,6 +348,11 @@
                       <path
                         d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" />
                     </svg>
+                    <svg class="podcast__btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                      <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                     </svg>
                   </button>
                 </div>
@@ -349,11 +391,11 @@
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-3-mobile.jpg">
                 <img src="./img/podcast/podcast-3-desktop.jpg" alt="Картинка альбома">
               </picture>
-              <time class="podcast__date" datetime="2001-06-08 8:54">8 июня</time>
+              <time class="podcast__date" datetime="06-08">8 июня</time>
               <div class="podcast__info">
                 <div class="podcast__top">
                   <div class="podcast__text">
-                    <time class="podcast__time" datetime="2001-06-08 8:54">
+                    <time class="podcast__time" datetime="08:54">
                       8:54
                     </time>
                     <h3 class="podcast__title">
@@ -370,6 +412,11 @@
                       <path
                         d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" />
                     </svg>
+                    <svg class="podcast__btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                      <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                     </svg>
                   </button>
                 </div>
@@ -408,11 +455,11 @@
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-4-mobile.jpg">
                 <img src="./img/podcast/podcast-4-desktop.jpg" alt="Картинка альбома">
               </picture>
-              <time class="podcast__date" datetime="2001-06-05 9:04">5 июня</time>
+              <time class="podcast__date" datetime="06-05">5 июня</time>
               <div class="podcast__info">
                 <div class="podcast__top">
                   <div class="podcast__text">
-                    <time class="podcast__time" datetime="2001-06-05 9:04">
+                    <time class="podcast__time" datetime="09:04">
                       9:04
                     </time>
                     <h3 class="podcast__title">
@@ -429,6 +476,11 @@
                       <path
                         d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" />
                     </svg>
+                    <svg class="podcast__btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                      <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                     </svg>
                   </button>
                 </div>
@@ -467,11 +519,11 @@
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-5-mobile.jpg">
                 <img src="./img/podcast/podcast-5-desktop.jpg" alt="Картинка альбома">
               </picture>
-              <time class="podcast__date" datetime="2001-06-02 7:03">2 июня</time>
+              <time class="podcast__date" datetime="06-02">2 июня</time>
               <div class="podcast__info">
                 <div class="podcast__top">
                   <div class="podcast__text">
-                    <time class="podcast__time" datetime="2001-06-02 7:03">
+                    <time class="podcast__time" datetime="07:03">
                       7:03
                     </time>
                     <h3 class="podcast__title">
@@ -488,6 +540,11 @@
                       <path
                         d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" />
                     </svg>
+                    <svg class="podcast__btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                      <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                     </svg>
                   </button>
                 </div>
@@ -526,11 +583,11 @@
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-6-mobile.jpg">
                 <img src="./img/podcast/podcast-6-desktop.jpg" alt="Картинка альбома">
               </picture>
-              <time class="podcast__date" datetime="2001-05-28 9:15">28 мая</time>
+              <time class="podcast__date" datetime="05-28">28 мая</time>
               <div class="podcast__info">
                 <div class="podcast__top">
                   <div class="podcast__text">
-                    <time class="podcast__time" datetime="2001-05-28 9:15">
+                    <time class="podcast__time" datetime="09:15">
                       9:15
                     </time>
                     <h3 class="podcast__title">
@@ -547,6 +604,11 @@
                       <path
                         d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" />
                     </svg>
+                    <svg class="podcast__btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                      <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                     </svg>
                   </button>
                 </div>
@@ -585,11 +647,11 @@
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-7-mobile.jpg">
                 <img src="./img/podcast/podcast-7-desktop.jpg" alt="Картинка альбома">
               </picture>
-              <time class="podcast__date" datetime="2001-05-22 16:04">22 мая</time>
+              <time class="podcast__date" datetime="05-22">22 мая</time>
               <div class="podcast__info">
                 <div class="podcast__top">
                   <div class="podcast__text">
-                    <time class="podcast__time" datetime="2001-05-22 16:04">
+                    <time class="podcast__time" datetime="16:04">
                       16:04
                     </time>
                     <h3 class="podcast__title">
@@ -606,6 +668,11 @@
                       <path
                         d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" />
                     </svg>
+                    <svg class="podcast__btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                      <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                     </svg>
                   </button>
                 </div>
@@ -644,11 +711,11 @@
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-8-mobile.jpg">
                 <img src="./img/podcast/podcast-8-desktop.jpg" alt="Картинка альбома">
               </picture>
-              <time class="podcast__date" datetime="2001-05-18 6:55">18 мая</time>
+              <time class="podcast__date" datetime="05-18">18 мая</time>
               <div class="podcast__info">
                 <div class="podcast__top">
                   <div class="podcast__text">
-                    <time class="podcast__time" datetime="2001-05-18 6:55">
+                    <time class="podcast__time" datetime="06:55">
                       6:55
                     </time>
                     <h3 class="podcast__title">
@@ -665,6 +732,11 @@
                       <path
                         d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" />
                     </svg>
+                    <svg class="podcast__btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                      <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                     </svg>
                   </button>
                 </div>
@@ -692,6 +764,262 @@
                       </path>
                     </svg>
                     42
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="podcast__item">
+            <div class="podcast__content">
+              <picture class="podcast__background">
+                <source media="(max-width: 576px)" srcset="./img/podcast/podcast-1-mobile.jpg">
+                <img src="./img/podcast/podcast-1-desktop.jpg" alt="Картинка альбома">
+              </picture>
+              <time class="podcast__date" datetime="06-14">14 июня</time>
+              <div class="podcast__info">
+                <div class="podcast__top">
+                  <div class="podcast__text">
+                    <time class="podcast__time" datetime="15:43">
+                      15:43
+                    </time>
+                    <h3 class="podcast__title">
+                      Европа. XIX век
+                    </h3>
+                    <p class="podcast__author">
+                      Дмитрий Гутенберг
+                    </p>
+                  </div>
+                  <button class="btn-reset podcast__event">
+                    <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke-width="2" />
+                      <path
+                        d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" />
+                    </svg>
+                    <svg class="podcast__btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                      <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="podcast__wrapper">
+                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                    <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
+                        fill="#A1A6B4" />
+                    </svg>
+                    258
+                  </button>
+                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
+                      </path>
+                    </svg>
+                    104
+                  </button>
+                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
+                      </path>
+                    </svg>
+                    68
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="podcast__item">
+            <div class="podcast__content">
+              <picture class="podcast__background">
+                <source media="(max-width: 576px)" srcset="./img/podcast/podcast-2-mobile.jpg">
+                <img src="./img/podcast/podcast-2-desktop.jpg" alt="Картинка альбома">
+              </picture>
+              <time class="podcast__date" datetime="06-11">11 июня</time>
+              <div class="podcast__info">
+                <div class="podcast__top">
+                  <div class="podcast__text">
+                    <time class="podcast__time" datetime="05:32">
+                      5:32
+                    </time>
+                    <h3 class="podcast__title">
+                      О музыке
+                    </h3>
+                    <p class="podcast__author">
+                      Дмитрий Гутенберг
+                    </p>
+                  </div>
+                  <button class="btn-reset podcast__event">
+                    <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke-width="2" />
+                      <path
+                        d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" />
+                    </svg>
+                    <svg class="podcast__btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                      <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="podcast__wrapper">
+                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                    <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
+                        fill="#A1A6B4" />
+                    </svg>
+                    207
+                  </button>
+                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
+                      </path>
+                    </svg>
+                    34
+                  </button>
+                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
+                      </path>
+                    </svg>
+                    18
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="podcast__item">
+            <div class="podcast__content">
+              <picture class="podcast__background">
+                <source media="(max-width: 576px)" srcset="./img/podcast/podcast-3-mobile.jpg">
+                <img src="./img/podcast/podcast-3-desktop.jpg" alt="Картинка альбома">
+              </picture>
+              <time class="podcast__date" datetime="06-08">8 июня</time>
+              <div class="podcast__info">
+                <div class="podcast__top">
+                  <div class="podcast__text">
+                    <time class="podcast__time" datetime="08:54">
+                      8:54
+                    </time>
+                    <h3 class="podcast__title">
+                      Люди сегодня
+                    </h3>
+                    <p class="podcast__author">
+                      Анна Васильева
+                    </p>
+                  </div>
+                  <button class="btn-reset podcast__event">
+                    <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke-width="2" />
+                      <path
+                        d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" />
+                    </svg>
+                    <svg class="podcast__btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                      <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="podcast__wrapper">
+                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                    <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
+                        fill="#A1A6B4" />
+                    </svg>
+                    104
+                  </button>
+                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
+                      </path>
+                    </svg>
+                    54
+                  </button>
+                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
+                      </path>
+                    </svg>
+                    42
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="podcast__item">
+            <div class="podcast__content">
+              <picture class="podcast__background">
+                <source media="(max-width: 576px)" srcset="./img/podcast/podcast-4-mobile.jpg">
+                <img src="./img/podcast/podcast-4-desktop.jpg" alt="Картинка альбома">
+              </picture>
+              <time class="podcast__date" datetime="06-05">5 июня</time>
+              <div class="podcast__info">
+                <div class="podcast__top">
+                  <div class="podcast__text">
+                    <time class="podcast__time" datetime="09:04">
+                      9:04
+                    </time>
+                    <h3 class="podcast__title">
+                      Хэллоу, Африка!
+                    </h3>
+                    <p class="podcast__author">
+                      Пётр Дмитриевский
+                    </p>
+                  </div>
+                  <button class="btn-reset podcast__event">
+                    <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke-width="2" />
+                      <path
+                        d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" />
+                    </svg>
+                    <svg class="podcast__btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                      <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="podcast__wrapper">
+                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                    <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
+                        fill="#A1A6B4" />
+                    </svg>
+                    87
+                  </button>
+                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
+                      </path>
+                    </svg>
+                    44
+                  </button>
+                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
+                      </path>
+                    </svg>
+                    5
                   </button>
                 </div>
               </div>
@@ -811,14 +1139,14 @@
                   <img src="./img/broadcast/broadcast-4-desktop.jpg" alt="Постер передачи">
                 </picture>
                 <div class="broadcast__info">
-                 <div class="broadcast__info-text">
+                  <div class="broadcast__info-text">
                     <h3 class="broadcast__article-title">
                       Эрудит
                     </h3>
                     <p class="broadcast__article-date">
                       По&nbsp;пятницам в&nbsp;17:00
                     </p>
-                 </div>
+                  </div>
                   <a href="#" class="broadcast__more">
                     <span class="broadcast__more-text">
                       Подробнее
@@ -897,7 +1225,225 @@
         </div>
       </div>
     </section>
+    <section class="guest">
+      <div class="container guest__container">
+        <h2 class="title guest__title">
+          Гости
+        </h2>
+        <p class="guest__descr-up">
+          У&nbsp;нас бывают:
+        </p>
+        <p class="guest__descr-down">
+          Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи
+          и&nbsp;много других интересных гостей!
+        </p>
+        <div class="guest__content">
+          <ul class="accordion accordion-list list-reset guest__list">
+            <li class="guest__item">
+              <h3 class="guest__header">
+                Блогеры
+              </h3>
+              <ul class="list-reset guest__name blogger">
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Сергей Денисов</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Евгений Воиновский</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Олег Свиридовский</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Денис Тельман</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Матвей Мечников</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name blogger__name-active" data-path="olga-martynova">Ольга Мартынова</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Владислав Кауперс</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Юрий Горин</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Константин Прусино</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Дмитрий Михалок</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Михаил Пожитников</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Максим Сергеев</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Иван Калитников</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Пётр Пиотровский</button>
+                </li>
+                <li class="blogger__item">
+                  <button class="btn-reset blogger__name" data-path="none">Георгий Полуян</button>
+                </li>
+              </ul>
+              <svg class="guest__arrow" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+              </svg>
+            </li>
+            <li class="guest__item">
+              <h3 class="guest__header">
+                Арт-критики
+              </h3>
+              <ul class="guest__name">
+
+              </ul>
+              <svg class="guest__arrow" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+              </svg>
+            </li>
+            <li class="guest__item">
+              <h3 class="guest__header">
+                Художники
+              </h3>
+              <ul class="guest__name">
+
+              </ul>
+              <svg class="guest__arrow" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+              </svg>
+            </li>
+            <li class="guest__item">
+              <h3 class="guest__header">
+                Люди науки
+              </h3>
+              <ul class="guest__name">
+
+              </ul>
+              <svg class="guest__arrow" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+              </svg>
+            </li>
+            <li class="guest__item">
+              <h3 class="guest__header">
+                Историки
+              </h3>
+              <ul class="guest__name">
+
+              </ul>
+              <svg class="guest__arrow" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+              </svg>
+            </li>
+            <li class="guest__item">
+              <h3 class="guest__header">
+                Фиологи
+              </h3>
+              <ul class="guest__name">
+
+              </ul>
+              <svg class="guest__arrow" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+              </svg>
+            </li>
+          </ul>
+          <div class="guest__tab tab">
+            <div class="tab__item tab__none" data-target="none">
+              <picture>
+                <source media="(min-width: 902px)" srcset="./img/guest/none-tablet.jpg">
+                <source media="(min-width: 576px)" srcset="./img/guest/none-sm-tablet.jpg">
+                <source media="(min-width: 320px)" srcset="./img/guest/none-mobile.jpg">
+                <img src="./img/guest/none-desktop.jpg" alt="">
+              </picture>
+            </div>
+            <div class="tab__item tab__item-active olga-martynova user" data-target="olga-martynova">
+              <picture>
+                <source media="(min-width: 902px)" srcset="./img/guest/olga-tablet.jpg">
+                <source media="(min-width: 576px)" srcset="./img/guest/olga-sm-tablet.jpg">
+                <source media="(min-width: 320px)" srcset="./img/guest/olga-mobile.jpg">
+                <img src="./img/guest/olga-desktop.jpg" alt="">
+              </picture>
+              <ul class="list-reset user__social">
+                <li class="user__item">
+                  <a class="user__link user-instagram" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_24531_5305)">
+                        <path
+                          d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_24531_5305">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="user__item">
+                  <a class="user__link user-facebook" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_24531_5308)">
+                        <path
+                          d="M15.78 22V14.26H18.3722L18.76 11.2511H15.78V9.33111C15.78 8.46 16.0222 7.86556 17.2711 7.86556H18.8644V5.17444C18.0931 5.09261 17.3179 5.05292 16.5422 5.05556C14.2456 5.05556 12.6733 6.45778 12.6733 9.03333V11.2511H10.0756V14.26H12.6733V22H3.11111C2.81643 22 2.53381 21.8829 2.32544 21.6746C2.11706 21.4662 2 21.1836 2 20.8889V3.11111C2 2.81643 2.11706 2.53381 2.32544 2.32544C2.53381 2.11706 2.81643 2 3.11111 2H20.8889C21.1836 2 21.4662 2.11706 21.6746 2.32544C21.8829 2.53381 22 2.81643 22 3.11111V20.8889C22 21.1836 21.8829 21.4662 21.6746 21.6746C21.4662 21.8829 21.1836 22 20.8889 22H15.78Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_24531_5308">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="user__item">
+                  <a class="user__link user-twitter" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_24531_5311)">
+                        <path
+                          d="M22.1621 5.65593C21.3986 5.99362 20.589 6.2154 19.7601 6.31393C20.6338 5.79136 21.2878 4.96894 21.6001 3.99993C20.7801 4.48793 19.8811 4.82993 18.9441 5.01493C18.3147 4.34151 17.4804 3.89489 16.571 3.74451C15.6616 3.59413 14.728 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0772 6.14972C11.6979 6.98983 11.6068 7.93171 11.8181 8.82893C10.1552 8.74558 8.52838 8.31345 7.04334 7.56059C5.55829 6.80773 4.24818 5.75097 3.19805 4.45893C2.82634 5.09738 2.63101 5.82315 2.63205 6.56193C2.63205 8.01193 3.37005 9.29293 4.49205 10.0429C3.82806 10.022 3.17869 9.84271 2.59805 9.51993V9.57193C2.59825 10.5376 2.93242 11.4735 3.5439 12.221C4.15538 12.9684 5.00653 13.4814 5.95305 13.6729C5.33667 13.84 4.69036 13.8646 4.06305 13.7449C4.32992 14.5762 4.85006 15.3031 5.55064 15.824C6.25123 16.3449 7.09718 16.6337 7.97005 16.6499C7.10253 17.3313 6.10923 17.8349 5.04693 18.1321C3.98464 18.4293 2.87418 18.5142 1.77905 18.3819C3.69075 19.6114 5.91615 20.264 8.18905 20.2619C15.8821 20.2619 20.0891 13.8889 20.0891 8.36193C20.0891 8.18193 20.0841 7.99993 20.0761 7.82193C20.8949 7.23009 21.6017 6.49695 22.1631 5.65693L22.1621 5.65593Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_24531_5311">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <strong class="user__name">
+                Ольга Мартынова
+              </strong>
+              <p class="user__descr">
+                Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик
+                газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея
+                &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.
+              </p>
+              <button class="btn-reset user__btn">
+                Эфиры с&nbsp;гостем
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <script src="./libs/scripts/jquary-min.js"></script>
+  <script src="./libs/scripts/jquery-ui.min.js"></script>
   <script src="./libs/scripts/choices.min.js"></script>
   <script src="./scripts/script.js"></script>
 </body>
