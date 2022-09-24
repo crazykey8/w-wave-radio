@@ -89,6 +89,19 @@ body {
 
 /* global */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 45px;
@@ -1229,7 +1242,6 @@ body {
 
 .broadcast__more svg {
   fill: var(--color-bold-blue);
-  transition: all .2s ease-in-out;
 }
 
 .broadcast__more:focus {
@@ -1501,12 +1513,17 @@ path {
 
 .blogger__name:hover {
   background-color: transparent;
+  color: var(--color-regular-purple);
+}
+
+.blogger__name:active {
+  background-color: transparent;
   color: var(--color-light-purple);
 }
 
 .blogger__name-active {
   background-color: transparent;
-  color: var(--color-regular-purple);
+  color: var(--color-light-purple);
 }
 
 .blogger__item:nth-last-child(4n) {
@@ -1610,4 +1627,288 @@ path {
 
 .user__link:active svg {
   fill: var(--color-bold-purple);
+}
+
+/* playlist */
+
+
+.playlist {
+  padding-top: 95px;
+  padding-bottom: 64px;
+  background-color: var(--color-white);
+}
+
+.playlist__container {
+  position: relative;
+  display: flex;
+}
+
+.playlist__title {
+  margin-bottom: 12px;
+}
+
+.playlist__select {
+  width: 350px;
+  margin-right: 30px;
+}
+
+.playlist__genre {
+  margin: 0;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--color-bold-gray);
+}
+
+.playlist__list {
+  padding-top: 6px;
+}
+
+.playlist__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.genre__text {
+  position: relative;
+  margin: 0;
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--color-bold-blue);
+}
+
+.genre__checkbox {
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.genre__checkbox-real {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.genre__text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--color-bold-gray);
+  border-radius: 50%;
+  transition: all .1s ease-in-out;
+}
+
+.genre__text::after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  bottom: 7px;
+  width: 11px;
+  height: 11px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  transition: all .1s ease-in-out;
+}
+
+.genre__checkbox-real:checked+.genre__text::before {
+  background-color: var(--color-bold-purple);
+  border-color: var(--color-bold-purple);
+}
+
+.genre__checkbox-real:focus+.genre__text::before {
+  border-color: var(--color-bold-purple);
+}
+
+.genre__checkbox-real:focus+.genre__text::after {
+  background-color: var(--color-regular-gray);
+}
+
+.genre__checkbox-real:hover+.genre__text::before {
+  border-color: var(--color-bold-purple);
+}
+
+.genre__checkbox-real:checked+.genre__text::after {
+  background-color: var(--color-white);
+}
+
+.playlist__content {
+  padding-top: 13px;
+}
+
+.playlist__catalog {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 730px;
+}
+
+.playlist__clip {
+  margin-bottom: 28px;
+}
+
+.playlist__clip:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.clip__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  outline: none;
+  transition: all .2s ease-in-out;
+}
+
+.clip__content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 160px;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  background-color: var(--color-bold-blue);
+  transition: all .2s ease-in-out;
+}
+
+.clip__content:focus::before {
+  opacity: 0.8;
+}
+
+.clip__content:focus::after {
+  opacity: 1;
+}
+
+.clip__content:focus .clip__text {
+  background-color: var(--color-light-purple);
+  border-color: var(--color-light-purple);
+}
+
+.clip__content:focus .clip__title,
+.clip__content:focus .clip__info {
+  color: var(--color-bold-blue);
+}
+
+.clip__content:hover::before {
+  opacity: 0.8;
+}
+
+.clip__content:hover::after {
+  opacity: 1;
+}
+
+.clip__content:hover .clip__text {
+  background-color: var(--color-regular-purple);
+  border-color: var(--color-regular-purple);
+}
+
+.clip__content:hover .clip__title,
+.clip__content:hover .clip__info {
+  color: var(--color-white);
+}
+
+.clip__content:active .clip__text {
+  background-color: var(--color-bold-purple);
+  border-color: var(--color-bold-purple);
+}
+
+.clip__content:active .clip__title,
+.clip__content:active .clip__info {
+  color: var(--color-white);
+}
+
+.clip__content:active::after {
+  background-image: url('../img/playlist/play_btn-big.png');
+}
+
+.clip__background {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background-color: var(--color-bold-gray);
+}
+
+.clip__content::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  background-image: url('../img/playlist/play_btn.png');
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  transition: all .2s ease-in-out;
+}
+
+.clip__background img {
+  display: block;
+  height: 100%;
+}
+
+.clip__country {
+  position: absolute;
+  right: 0;
+}
+
+.clip__text {
+  border: 1px solid var(--color-light-gray);
+  padding: 16px;
+  transition: all .2s ease-in-out;
+}
+
+.clip__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--color-bold-blue);
+  transition: all .2s ease-in-out;
+}
+
+.clip__info {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--color-bold-gray);
+  transition: all .2s ease-in-out;
+}
+
+.playlist__copy {
+  position: absolute;
+  bottom: 150px;
+  width: 350px;
+  padding-top: 38px;
+  border-top: 1px solid var(--color-regular-gray);
+}
+
+.playlist__warning {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-bold-gray);
+}
+
+.playlist__warning-date {
+  margin: 0;
+  margin-bottom: 6px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-bold-gray);
 }

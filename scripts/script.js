@@ -54,6 +54,9 @@ $(".accordion-list").accordion({
   heightStyle: "content",
   collapsible: true,
   icons: false,
+  create: function () {
+    $('.guest__header').attr('tabIndex', '0');
+  },
 });
 
 document.querySelectorAll('.blogger__name').forEach(function (tabsBtn) {
@@ -70,3 +73,6 @@ document.querySelectorAll('.blogger__name').forEach(function (tabsBtn) {
     document.querySelector(`[data-target="${path}"]`).classList.add('tab__item-active');
   });
 });
+
+const simplebar = new SimpleBar(document.getElementById('playlist'));
+simplebar.contentWrapperEl.setAttribute('tabindex', '-1');

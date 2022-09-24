@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./libs/styles/choices.min.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -207,7 +208,7 @@
                 <rect x="13" y="8" width="2" height="8" rx="1" fill="white" />
               </g>
               <defs>
-                <clipPath id="clip0_24531_3491">
+                <clipPath id="clip0_24531_3492">
                   <rect width="24" height="24" fill="white" />
                 </clipPath>
               </defs>
@@ -1260,7 +1261,8 @@
                   <button class="btn-reset blogger__name" data-path="none">Матвей Мечников</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name blogger__name-active" data-path="olga-martynova">Ольга Мартынова</button>
+                  <button class="btn-reset blogger__name blogger__name-active" data-path="olga-martynova">Ольга
+                    Мартынова</button>
                 </li>
                 <li class="blogger__item">
                   <button class="btn-reset blogger__name" data-path="none">Владислав Кауперс</button>
@@ -1297,7 +1299,7 @@
               </svg>
             </li>
             <li class="guest__item">
-              <h3 class="guest__header">
+              <h3 class="guest__header" tabindex="0">
                 Арт-критики
               </h3>
               <ul class="guest__name">
@@ -1441,7 +1443,306 @@
         </div>
       </div>
     </section>
+    <section class="playlist">
+      <div class="container playlist__container">
+        <div class="playlist__select">
+          <h2 class="title playlist__title">
+            Плейлисты
+          </h2>
+          <p class="playlist__genre">
+            Жанр
+          </p>
+          <div id="playlist" class="playlist__group" data-simplebar>
+            <ul class="list-reset playlist__list">
+              <li class="playlist__item genre">
+                <label class="genre__checkbox">
+                  <input class="genre__checkbox-real" name="genre" type="radio" checked>
+                  <span class="genre__text">
+                    Постпанк
+                  </span>
+                </label>
+              </li>
+              <li class="playlist__item genre">
+                <label class="genre__checkbox">
+                  <input class="genre__checkbox-real" name="genre" type="radio">
+                  <span class="genre__text">
+                    Хардкор
+                  </span>
+                </label>
+              </li>
+              <li class="playlist__item genre">
+                <label class="genre__checkbox">
+                  <input class="genre__checkbox-real" name="genre" type="radio">
+                  <span class="genre__text">
+                    Панк-рок
+                  </span>
+                </label>
+              </li>
+              <li class="playlist__item genre">
+                <label class="genre__checkbox">
+                  <input class="genre__checkbox-real" name="genre" type="radio">
+                  <span class="genre__text">
+                    Рок
+                  </span>
+                </label>
+              </li>
+              <li class="playlist__item genre">
+                <label class="genre__checkbox">
+                  <input class="genre__checkbox-real" name="genre" type="radio">
+                  <span class="genre__text">
+                    Прогрессивный рок
+                  </span>
+                </label>
+              </li>
+              <li class="playlist__item genre">
+                <label class="genre__checkbox">
+                  <input class="genre__checkbox-real" name="genre" type="radio">
+                  <span class="genre__text">
+                    Электронная музыка
+                  </span>
+                </label>
+              </li>
+              <li class="playlist__item genre">
+                <label class="genre__checkbox">
+                  <input class="genre__checkbox-real" name="genre" type="radio">
+                  <span class="genre__text">
+                    Классическая музыка
+                  </span>
+                </label>
+              </li>
+              <li class="playlist__item genre">
+                <label class="genre__checkbox">
+                  <input class="genre__checkbox-real" name="genre" type="radio">
+                  <span class="genre__text">
+                    Звуки природы и&nbsp;шум города
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="playlist__content">
+          <ul class="list-reset playlist__catalog">
+            <li class="playlist__clip clip">
+              <div class="clip__content" tabindex="0">
+                <picture class="clip__background">
+                  <source media="(max-width: 1200px)" srcset="./img/playlist/clip-1-tablet.jpg">
+                  <img src="./img/playlist/clip-1-desktop.jpg" alt="">
+                </picture>
+                <img src="./img/playlist/ru-flag.jpg" alt="" class="clip__country">
+                <div class="clip__text">
+                  <h3 class="clip__title">
+                    Ploho
+                  </h3>
+                  <p class="clip__info">
+                    3&nbsp;последних альбома
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="playlist__clip clip">
+              <div class="clip__content" tabindex="0">
+                <picture class="clip__background">
+                  <source media="(max-width: 1200px)" srcset="./img/playlist/clip-2-tablet.jpg">
+                  <img src="./img/playlist/clip-2-desktop.jpg" alt="">
+                </picture>
+                <img src="./img/playlist/ru-flag.jpg" alt="" class="clip__country">
+                <div class="clip__text">
+                  <h3 class="clip__title">
+                    Molchat Doma
+                  </h3>
+                  <p class="clip__info">
+                    Все песни
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="playlist__clip clip">
+              <div class="clip__content" tabindex="0">
+                <picture class="clip__background">
+                  <source media="(max-width: 1200px)" srcset="./img/playlist/clip-3-tablet.jpg">
+                  <img src="./img/playlist/clip-3-desktop.jpg" alt="">
+                </picture>
+                <img src="./img/playlist/ru-flag.jpg" alt="" class="clip__country">
+                <div class="clip__text">
+                  <h3 class="clip__title">
+                    Motorama
+                  </h3>
+                  <p class="clip__info">
+                    Все синглы
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="playlist__clip clip">
+              <div class="clip__content" tabindex="0">
+                <picture class="clip__background">
+                  <source media="(max-width: 1200px)" srcset="./img/playlist/clip-4-tablet.jpg">
+                  <img src="./img/playlist/clip-4-desktop.jpg" alt="">
+                </picture>
+                <img src="./img/playlist/ru-flag.jpg" alt="" class="clip__country">
+                <div class="clip__text">
+                  <h3 class="clip__title">
+                    Human Tetris
+                  </h3>
+                  <p class="clip__info">
+                    3&nbsp;последних альбома
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="playlist__clip clip">
+              <div class="clip__content" tabindex="0">
+                <picture class="clip__background">
+                  <source media="(max-width: 1200px)" srcset="./img/playlist/clip-5-tablet.jpg">
+                  <img src="./img/playlist/clip-5-desktop.jpg" alt="">
+                </picture>
+                <img src="./img/playlist/ru-flag.jpg" alt="" class="clip__country">
+                <div class="clip__text">
+                  <h3 class="clip__title">
+                    Буерак
+                  </h3>
+                  <p class="clip__info">
+                    Все&nbsp;EP
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="playlist__clip clip">
+              <div class="clip__content" tabindex="0">
+                <picture class="clip__background">
+                  <source media="(max-width: 1200px)" srcset="./img/playlist/clip-6-tablet.jpg">
+                  <img src="./img/playlist/clip-6-desktop.jpg" alt="">
+                </picture>
+                <img src="./img/playlist/ru-flag.jpg" alt="" class="clip__country">
+                <div class="clip__text">
+                  <h3 class="clip__title">
+                    Июльские Дни
+                  </h3>
+                  <p class="clip__info">
+                    Альбом &laquo;Колокол&raquo;
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="playlist__clip clip">
+              <div class="clip__content" tabindex="0">
+                <picture class="clip__background">
+                  <source media="(max-width: 1200px)" srcset="./img/playlist/clip-7-tablet.jpg">
+                  <img src="./img/playlist/clip-7-desktop.jpg" alt="">
+                </picture>
+                <img src="./img/playlist/uk-flag.jpg" alt="" class="clip__country">
+                <div class="clip__text">
+                  <h3 class="clip__title">
+                    Joy Division
+                  </h3>
+                  <p class="clip__info">
+                    Лучшее за&nbsp;всё время
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="playlist__clip clip">
+              <div class="clip__content" tabindex="0">
+                <picture class="clip__background">
+                  <source media="(max-width: 1200px)" srcset="./img/playlist/clip-8-tablet.jpg">
+                  <img src="./img/playlist/clip-8-desktop.jpg" alt="">
+                </picture>
+                <img src="./img/playlist/uk-flag.jpg" alt="" class="clip__country">
+                <div class="clip__text">
+                  <h3 class="clip__title">
+                    The Cure
+                  </h3>
+                  <p class="clip__info">
+                    Лучшее за&nbsp;всё время
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="playlist__clip clip">
+              <div class="clip__content" tabindex="0">
+                <picture class="clip__background">
+                  <source media="(max-width: 1200px)" srcset="./img/playlist/clip-9-tablet.jpg">
+                  <img src="./img/playlist/clip-9-desktop.jpg" alt="">
+                </picture>
+                <img src="./img/playlist/uk-flag.jpg" alt="" class="clip__country">
+                <div class="clip__text">
+                  <h3 class="clip__title">
+                    The Smiths
+                  </h3>
+                  <p class="clip__info">
+                    Период 1984&ndash;1988
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="playlist__clip clip">
+              <div class="clip__content" tabindex="0">
+                <picture class="clip__background">
+                  <source media="(max-width: 1200px)" srcset="./img/playlist/clip-10-tablet.jpg">
+                  <img src="./img/playlist/clip-10-desktop.jpg" alt="">
+                </picture>
+                <img src="./img/playlist/uk-flag.jpg" alt="" class="clip__country">
+                <div class="clip__text">
+                  <h3 class="clip__title">
+                    New Order
+                  </h3>
+                  <p class="clip__info">
+                    Хиты
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="playlist__clip clip">
+              <div class="clip__content" tabindex="0">
+                <picture class="clip__background">
+                  <source media="(max-width: 1200px)" srcset="./img/playlist/clip-11-tablet.jpg">
+                  <img src="./img/playlist/clip-11-desktop.jpg" alt="">
+                </picture>
+                <img src="./img/playlist/uk-flag.jpg" alt="" class="clip__country">
+                <div class="clip__text">
+                  <h3 class="clip__title">
+                    Bauhaus
+                  </h3>
+                  <p class="clip__info">
+                    Все синглы
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="playlist__clip clip">
+              <div class="clip__content" tabindex="0">
+                <picture class="clip__background">
+                  <source media="(max-width: 1200px)" srcset="./img/playlist/clip-12-tablet.jpg">
+                  <img src="./img/playlist/clip-12-desktop.jpg" alt="">
+                </picture>
+                <img src="./img/playlist/uk-flag.jpg" alt="" class="clip__country">
+                <div class="clip__text">
+                  <h3 class="clip__title">
+                    Gang Of&nbsp;Four
+                  </h3>
+                  <p class="clip__info">
+                    3&nbsp;последних альбома
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="playlist__copy">
+          <p class="playlist__warning">
+            Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную
+            для&nbsp;несовершеннолетних
+          </p>
+          <p class="playlist__warning-date">
+            &copy;&nbsp;2021&nbsp;l W-Wave
+          </p>
+          <img src="./img/playlist/age.png" alt="">
+        </div>
+      </div>
+    </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="./libs/scripts/jquary-min.js"></script>
   <script src="./libs/scripts/jquery-ui.min.js"></script>
   <script src="./libs/scripts/choices.min.js"></script>
