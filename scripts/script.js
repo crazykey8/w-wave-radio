@@ -1,9 +1,6 @@
 
 document.querySelector('#burger').addEventListener('click', () => {
   document.querySelector('.burger').classList.toggle('open');
-  document.querySelector('.header__top:before').classList.toggle('header__top-active')
-  document.querySelector('.header__top:after').classList.toggle('header__top-active')
-  document.querySelector('.top__nav').classList.toggle('header__top-active')
 });
 
 document.querySelector('.top__search').addEventListener('click', (e) => {

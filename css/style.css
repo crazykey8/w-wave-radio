@@ -1912,3 +1912,148 @@ path {
   line-height: 22px;
   color: var(--color-bold-gray);
 }
+
+/* advertising */
+
+.advertising {
+  padding-top: 95px;
+  padding-bottom: 133px;
+  background-color: var(--color-semibold-blue);
+}
+
+.advertising__container {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.advertising__picture {
+  position: relative;
+  width: 640px;
+}
+
+.advertising__new {
+  position: absolute;
+  bottom: 72%;
+}
+
+.advertising__info {
+  padding-left: 30px;
+  width: 478px;
+}
+
+.advertising__title {
+  margin: 0;
+  margin-bottom: 17px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: #F0D288;
+}
+
+.advertising__descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--color-white);
+}
+
+.advertising__descr-up {
+  padding-top: 31px;
+  margin-bottom: 12px;
+  background-image: url('../img/advertising/line.png');
+  background-repeat: no-repeat;
+}
+
+.advertising__wrapper {
+  margin-top: 30px;
+}
+
+.advertising__price {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--color-white);
+}
+
+.advertising__btn {
+  display: flex;
+  align-items: center;
+  padding: 23px 14px;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid var(--color-light-yellow);
+  border-radius: 100px;
+  transition: all .2s ease-in-out;
+}
+
+.advertising__btn svg path:nth-child(1) {
+  fill: var(--color-light-yellow);
+  transition: all .2s ease-in-out;
+}
+
+.advertising__btn svg path {
+  fill: var(--color-bold-blue);
+  transition: all .2s ease-in-out;
+}
+
+.advertising__btn-text {
+  margin-left: 4px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--color-light-yellow);
+  transition: all .2s ease-in-out;
+}
+
+.advertising__btn:focus svg path:nth-child(1) {
+  fill: var(--color-light-yellow);
+}
+
+.advertising__btn:focus svg path {
+  fill: var(--color-bold-blue);
+}
+
+.advertising__btn:focus .advertising__btn-text {
+  color: var(--color-bold-blue);
+}
+
+.advertising__btn:focus {
+  background-color: var(--color-bold-yellow);
+}
+
+.advertising__btn:hover svg path:nth-child(1) {
+  fill: var(--color-bold-blue);
+}
+
+.advertising__btn:hover svg path {
+  fill: var(--color-light-yellow);
+}
+
+.advertising__btn:hover .advertising__btn-text {
+  color: var(--color-bold-blue);
+}
+
+.advertising__btn:hover {
+  background-color: var(--color-light-yellow);
+}
+
+.advertising__btn:active svg path:nth-child(1) {
+  fill: var(--color-bold-blue);
+}
+
+.advertising__btn:active svg path {
+  fill: var(--color-light-yellow);
+}
+
+.advertising__btn:active .advertising__btn-text {
+  color: var(--color-bold-blue);
+}
+
+.advertising__btn:active {
+  background-color: var(--color-bold-yellow);
+  border-color: var(--color-bold-yellow);
+}

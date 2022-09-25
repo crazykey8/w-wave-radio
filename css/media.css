@@ -241,6 +241,27 @@
     bottom: 0;
     top: 12px;
   }
+
+  .advertising {
+    padding-bottom: 94px;
+  }
+
+  .advertising__container {
+    padding: 0 39px;
+  }
+
+  .advertising__radio {
+    margin-bottom: 33px;
+  }
+
+  .advertising__picture {
+    width: 450px;
+  }
+
+  .advertising__new {
+    bottom: 74%;
+    width: 25%;
+  }
 }
 
 @media (max-width: 902px) {
@@ -478,6 +499,37 @@
 
   .playlist__clip:not(:nth-child(2n)) {
     margin-right: 29px;
+  }
+
+  .advertising {
+    padding-top: 55px;
+  }
+
+  .advertising__container {
+    padding: 0 19px;
+    flex-direction: column;
+  }
+
+  .advertising__picture {
+    width: 100%;
+  }
+
+  .advertising__new {
+    bottom: 68%;
+    width: 35%;
+  }
+
+  .advertising__radio {
+    margin-bottom: 46px;
+  }
+
+  .advertising__info {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .advertising__descr-up {
+    margin-bottom: 14px;
   }
 }
 
@@ -1053,6 +1105,62 @@
     font-weight: 300;
     font-size: 12px;
     line-height: 22px;
+  }
+
+  .advertising {
+    padding-bottom: 55px;
+  }
+
+  .advertising__container {
+    padding: 0 33px;
+  }
+
+  .advertising__new {
+    bottom: 75%;
+    width: 25%;
+  }
+
+  .advertising__radio {
+    margin-bottom: 32px;
+  }
+
+  .advertising__title {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+  .advertising__descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 158%;
+  }
+
+  .advertising__descr-up {
+    margin-bottom: 10px;
+    background-image: url('../img/advertising/line-mobile.png');
+  }
+
+  .advertising__wrapper {
+    margin-top: 13px;
+  }
+
+  .advertising__price {
+    margin-bottom: 19px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .advertising__btn {
+    padding: 13px 14px;
+  }
+
+  .advertising__btn-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
   }
 
 }

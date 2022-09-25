@@ -10,9 +10,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon/favicon.ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
-  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./libs/styles/simplebar.css">
   <link rel="stylesheet" href="./libs/styles/choices.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
 </head>
@@ -1741,8 +1741,65 @@
         </div>
       </div>
     </section>
+    <section class="advertising">
+      <div class="container advertising__container">
+        <div class="advertising__picture">
+          <div class="advertising__radio">
+            <picture class="advertising__image">
+              <source media="(max-width: 576px)" srcset="./img/advertising/radio-mobile.png">
+              <source media="(max-width: 902px)" srcset="./img/advertising/radio-sm-tablet.png">
+              <source media="(max-width: 1200px)" srcset="./img/advertising/radio-tablet.png">
+              <img src="./img/advertising/radio-desktop.png" alt="">
+            </picture>
+          </div>
+          <picture class="advertising__new">
+            <source media="(max-width: 576px)" srcset="./img/advertising/new-mobile.png">
+            <source media="(max-width: 902px)" srcset="./img/advertising/new-sm-tablet.png">
+            <source media="(max-width: 1200px)" srcset="./img/advertising/new-tablet.png">
+            <img src="./img/advertising/new-desktop.png" alt="">
+          </picture>
+        </div>
+        <div class="advertising__info">
+          <h2 class="advertising__title">
+            Будь с&nbsp;нами на&nbsp;одной волне!
+          </h2>
+          <p class="advertising__descr advertising__descr-up">
+            Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на&nbsp;то, что мы&nbsp;только
+            начали свой путь радиовещателей, нам хочется, чтобы&nbsp;вы&nbsp;могли как следует нас расслышать:)
+          </p>
+          <p class="advertising__descr advertising__descr-down">
+            Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm. Тщательный подбор всех делатей,
+            ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах,
+            но&nbsp;мы&nbsp;активно трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!
+          </p>
+          <div class="advertising__wrapper">
+            <p class="advertising__price">
+              2&nbsp;800&nbsp;₽
+            </p>
+            <button class="btn-reset advertising__btn">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_44122_968)">
+                  <path
+                    d="M10.5 20C16.0228 20 20.5 15.5228 20.5 9.99998C20.5 4.47714 16.0228 0 10.5 0C4.97724 0 0.5 4.47714 0.5 9.99998C0.5 15.5228 4.97724 20 10.5 20Z" />
+                  <path
+                    d="M17.4383 4.54391L13.7294 3.17676L8.39558 10.8637L8.92665 7.3751L6.02046 5.68219L0.673828 12.1141C0.924147 13.3858 1.41008 14.5718 2.08375 15.6239L5.27361 11.7711L4.09981 16.2962L7.73695 17.6271L13.1407 9.8464L11.9568 14.2958L14.9032 16.0179L20.5579 10.3174C20.5591 10.2534 20.5598 10.1889 20.5598 10.1246C20.5598 8.78258 20.3016 7.50132 19.8328 6.32896L16.548 9.6538L17.4383 4.54391Z" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_44122_968">
+                    <rect x="0.5" width="20" height="20" rx="10" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="advertising__btn-text">
+                Купить на&nbsp;Яндекс.Маркет
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="./libs/scripts/simplebar-min.js"></script>
   <script src="./libs/scripts/jquary-min.js"></script>
   <script src="./libs/scripts/jquery-ui.min.js"></script>
   <script src="./libs/scripts/choices.min.js"></script>
