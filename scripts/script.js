@@ -1,11 +1,34 @@
 
-document.querySelector('#burger').addEventListener('click', () => {
-  document.querySelector('.burger').classList.toggle('open');
+
+document.querySelector('.burger').addEventListener('click',
+  function () {
+    document.querySelector('.burger').classList.toggle('open');
+    document.querySelector('.header').classList.toggle('header-active');
+    document.querySelector('.top__nav').classList.toggle('header__top-active');
+    document.querySelector('.bottom__nav').classList.toggle('header__top-active');
+    document.body.classList.toggle('stop-scroll');
+  });
+document.querySelectorAll('.top__link').forEach(function (el) {
+  el.addEventListener('click', function () {
+    document.querySelector('.burger').classList.remove('open');
+    document.querySelector('.header').classList.toggle('header-active');
+    document.querySelector('.top__nav').classList.remove('header__top-active');
+    document.querySelector('.bottom__nav').classList.remove('header__top-active');
+    document.body.classList.remove('stop-scroll');
+  });
 });
 
 document.querySelector('.top__search').addEventListener('click', (e) => {
   document.querySelector('.top__input').classList.toggle('top__form-visible');
   e.preventDefault();
+});
+
+document.querySelector('.btn__mobile').addEventListener('click', function () {
+  document.querySelector('.btn__mobile').classList.toggle('btn__mobile-active')
+  document.querySelector('.header__bottom').classList.toggle('header__bottom-active')
+  document.querySelectorAll('.btn__playaudio').forEach((e) => {
+    e.classList.toggle('btn__playaudio-active');
+  });
 });
 
 const btnPlayaudio = document.querySelectorAll('.btn__playaudio')

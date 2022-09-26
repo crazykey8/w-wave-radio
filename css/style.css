@@ -131,6 +131,10 @@ body {
   color: var(--color-bold-blue);
 }
 
+.stop-scroll {
+  overflow: hidden;
+}
+
 /* header */
 
 .burger {

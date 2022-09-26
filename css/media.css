@@ -3,6 +3,10 @@
     max-width: 902px;
   }
 
+  .header__up {
+    z-index: 4;
+  }
+
   .up {
     display: flex;
   }
@@ -275,51 +279,44 @@
 
   .burger {
     display: block;
-    z-index: 2;
+    z-index: 7;
   }
 
   .header__top {
     position: relative;
   }
 
-  .header__top::before.header__top-active {
-    opacity: 1;
-  }
-
-  .header__top::after.header__top-active {
-    opacity: 1;
+  .header__top-active {
+    display: block;
   }
 
   .top__nav.header__top-active {
     display: block;
+    z-index: 6;
   }
 
-  .header__top::before {
-    display: none;
+  .header-active::before {
     content: '';
-    z-index: 2;
+    z-index: 5;
     position: absolute;
     height: 100vh;
     width: 100%;
-    opacity: 0;
-    background-image: url('../img/header/spiral2.png');
-    background-repeat: no-repeat;
-    background-position: 85% top;
-  }
-
-  .header__top:after {
-    display: none;
-    content: '';
-    position: absolute;
-    top: 0;
-    background-color: var(--color-regular-gray);
-    height: 100vh;
-    opacity: 0;
-    width: 100%;
-    z-index: 1;
     background-image: url('../img/header/spiral.png');
     background-repeat: no-repeat;
     background-position: 60% bottom;
+  }
+
+  .header-active:after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    background-color: var(--color-regular-gray);
+    height: 100vh;
+    width: 100%;
+    z-index: 4;
+    background-image: url('../img/header/spiral2.png');
+    background-repeat: no-repeat;
+    background-position: 85% top;
   }
 
   .top {
@@ -333,7 +330,7 @@
     margin-top: 60px;
     max-width: 270px;
     columns: 2;
-    z-index: 2;
+    z-index: 6;
     overflow-y: auto;
   }
 
@@ -550,13 +547,10 @@
     display: block;
   }
 
-  .header__top::before {
+  .header-active:after {
+    top: 50px;
+    height: 50vh;
     background-image: none;
-  }
-
-  .header__top::after {
-    background-image: none;
-    background-color: var(--color-regular-gray);
   }
 
   .top {
@@ -596,8 +590,7 @@
     position: relative;
   }
 
-  .header__bottom::after {
-    display: none;
+  .header-active::before {
     content: '';
     position: absolute;
     top: 220px;
@@ -605,21 +598,42 @@
     width: 100%;
     z-index: 1;
     background-color: var(--color-white);
+    background-image: none;
   }
 
   .bottom {
+    position: relative;
     justify-content: center;
     padding: 12px 32px;
+  }
+
+  .header__bottom-active {
+    background-color: var(--color-light-gray);
+    border-color: var(--color-regular-gray);
+  }
+
+  .header__bottom-active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 77px;
+    border-bottom: 1px solid var(--color-light-gray);
+    top: 41px;
+    z-index: 3;
+    background-color: var(--color-white);
+  }
+
+  .header__top-active.bottom__nav {
+    display: block;
   }
 
   .bottom__nav {
     display: none;
     position: absolute;
-    top: 260px;
+    top: 50vh;
     max-width: 100%;
     columns: 2;
     z-index: 2;
-    overflow-y: auto;
   }
 
   .bottom__link {
@@ -640,16 +654,76 @@
     display: block;
   }
 
-  .btn__stream {
+  .bottom__wrapper {
+    position: relative;
+  }
+
+  .btn__playaudio-active.btn__playaudio {
+    display: block;
+  }
+
+  .btn__playaudio {
     display: none;
+    position: absolute;
+    top: 35px;
+    width: 120px;
+    height: 62px;
+    z-index: 4;
+  }
+
+  .btn__playaudio:nth-child(1) {
+    border-right: 1px solid var(--color-regular-gray);
+  }
+
+  .btn__playaudio svg {
+    top: auto;
+    left: 0px;
+    bottom: 35px;
+    z-index: 4;
+  }
+
+  .btn__stream {
+    left: 80px;
+  }
+
+  .btn__archive {
+    right: 65px;
+  }
+
+  .btn__archive::before,
+  .btn__archive::after {
+    left: 0;
+    bottom: 0;
+    top: auto;
+  }
+
+  .btn__archive::before {
+    top: 30px;
+  }
+
+  .btn__stream::before,
+  .btn__stream::after {
+    display: block;
+    left: 0;
+    bottom: 0;
+    top: auto;
+  }
+
+  .btn__stream::before {
+    top: 30px;
   }
 
   .btn__mobile {
     display: flex;
   }
 
+  .btn__mobile-active svg {
+    transform: rotate(-45deg);
+  }
+
   .btn__mobile svg {
     margin-right: 7px;
+    transition: all .2s ease-in-out;
   }
 
   .hero {
