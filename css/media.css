@@ -176,6 +176,10 @@
     width: 100%;
   }
 
+  .playlist__group {
+    height: 192px;
+  }
+
   .playlist__list {
     display: flex;
     flex-wrap: wrap;
@@ -215,7 +219,7 @@
 
   .clip__content {
     flex-direction: row;
-    max-height: 113px;
+    min-height: 113px;
     min-width: 255px;
   }
 
@@ -226,7 +230,8 @@
   }
 
   .clip__background {
-    height: 112px;
+    min-height: 112px;
+    height: 100%;
     width: 112px;
   }
 
@@ -475,6 +480,10 @@
 
   .playlist__container {
     padding: 0 18px;
+  }
+
+  .playlist__group {
+    height: 255px;
   }
 
   .playlist__list {
@@ -1149,6 +1158,7 @@
 
   .clip__text {
     width: 112px;
+    min-height: 46px;
   }
 
   .clip__title {

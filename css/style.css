@@ -283,18 +283,9 @@ body {
 }
 
 .top__input.top__form-visible {
-  display: block;
-  animation: .2s show ease-in-out;
-}
-
-@keyframes show {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  opacity: 1;
+  transform: translateX(0);
+  transition: all .2s ease-in-out;
 }
 
 .top__form {
@@ -305,11 +296,12 @@ body {
   position: absolute;
   right: 175px;
   bottom: 12px;
-  display: none;
+  display: block;
   padding: 10px;
   padding-left: 0;
   padding-bottom: 0;
   margin: 0;
+  opacity: 0;
   width: 278px;
   outline: none;
   border: none;
@@ -317,6 +309,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  transform: translateX(-60px);
   transition: all .2s ease-in-out;
 }
 
@@ -1666,6 +1659,10 @@ path {
   color: var(--color-bold-gray);
 }
 
+.playlist__group {
+  height: 353px;
+}
+
 .playlist__list {
   padding-top: 6px;
 }
@@ -1707,6 +1704,7 @@ path {
   position: absolute;
   left: 0;
   bottom: 0;
+  top: -5px;
   width: 25px;
   height: 25px;
   border: 2px solid var(--color-bold-gray);
@@ -1719,6 +1717,7 @@ path {
   position: absolute;
   left: 7px;
   bottom: 7px;
+  top: 2px;
   width: 11px;
   height: 11px;
   background-color: var(--color-white);
@@ -1769,6 +1768,8 @@ path {
   position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 225px;
+  height: 100%;
   cursor: pointer;
   outline: none;
   transition: all .2s ease-in-out;
@@ -1870,6 +1871,8 @@ path {
   border: 1px solid var(--color-light-gray);
   padding: 16px;
   transition: all .2s ease-in-out;
+  max-width: 160px;
+  height: 100%;
 }
 
 .clip__title {
