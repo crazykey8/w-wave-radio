@@ -50,7 +50,7 @@
     </div>
     <div class="header__top">
       <div class="container top">
-        <a href="./index.html" class="top__logo" tabindex="-1">
+        <a href="./index.html" class="top__logo" tabindex="-1" aria-label="Логотип Радио Ви-Вейв">
           <svg width="160" height="20" viewBox="0 0 160 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M29.2408 0.331491V11.7403C29.2408 14.4291 28.5054 16.4825 27.0345 17.9006C25.5636 19.3002 23.4783 20 20.7786 20C19.438 20 18.2371 19.8066 17.1758 19.4199C16.1332 19.0331 15.2767 18.4899 14.6064 17.7901C13.9176 18.4899 13.0518 19.0331 12.0091 19.4199C10.9665 19.8066 9.78418 20 8.46224 20C5.76252 20 3.67721 19.3002 2.20633 17.9006C0.735443 16.4825 0 14.4291 0 11.7403V0.331491H4.52437V11.6022C4.52437 13.1676 4.8502 14.3278 5.50186 15.0829C6.15351 15.8195 7.12169 16.1878 8.40639 16.1878C11.0316 16.1878 12.3443 14.6593 12.3443 11.6022V0.331491H16.8686V11.6022C16.8686 14.6593 18.1906 16.1878 20.8344 16.1878C23.4038 16.1878 24.6885 14.6593 24.6885 11.6022V0.331491H29.2408Z"
@@ -93,12 +93,12 @@
               </a>
             </li>
             <li class="top__item">
-              <a href="#playlist" class="top__link">
+              <a href="#playlists" class="top__link">
                 Плейлисты
               </a>
             </li>
             <li class="top__item">
-              <a href="#info" class="top__link">
+              <a href="#about-us" class="top__link">
                 О&nbsp;нас
               </a>
             </li>
@@ -148,12 +148,12 @@
               </a>
             </li>
             <li class="bottom__item">
-              <a href="#rate" class="bottom__link">
+              <a href="#" class="bottom__link">
                 Рейтинги
               </a>
             </li>
             <li class="bottom__item">
-              <a href="#" class="bottom__link">
+              <a href="#adv" class="bottom__link">
                 Реклама
               </a>
             </li>
@@ -232,15 +232,15 @@
       <div class="container hero__container">
         <div class="hero__text">
           <h1 class="hero__title">
-            Радио <strong class="hero__title-italic">W-Wawe</strong>
+            Радио <strong class="hero__title-italic">W-Wave</strong>
           </h1>
           <p class="hero__descr">
-            Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были <a class="hero__descr-link" href="#"
-              aria-label="Перейти на ссылку 'издании'">изданием</a>, а&nbsp;теперь пробуем себя в&nbsp;разоворном
+            Привет, на&nbsp;связи W-Wave! Раньше мы&nbsp;были <a class="hero__descr-link" href="#">изданием</a>,
+            а&nbsp;теперь пробуем себя в&nbsp;разговорном
             жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого
             эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)
           </p>
-          <a href="#" class="hero__btn" aria-label="Слушать эфир">
+          <a href="#" class="hero__btn">
             Слушать эфир
           </a>
         </div>
@@ -252,17 +252,17 @@
         </div>
       </div>
     </section>
-    <section class="podcast">
+    <section id="podcast" class="podcast">
       <div class="container podcast__container">
         <h2 class="title podcast__subtitle">
           Подкасты
         </h2>
         <ul class="list-reset podcast__list">
           <li class="podcast__item">
-            <div class="podcast__content">
+            <div class="podcast__content" title="1 элемент">
               <picture class="podcast__background">
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-1-mobile.jpg">
-                <img src="./img/podcast/podcast-1-desktop.jpg" alt="Картинка альбома">
+                <img src="./img/podcast/podcast-1-desktop.jpg" alt="Первый постер подкаста">
               </picture>
               <time class="podcast__date" datetime="06-14">14 июня</time>
               <div class="podcast__info">
@@ -278,7 +278,7 @@
                       Дмитрий Гутенберг
                     </p>
                   </div>
-                  <button class="btn-reset podcast__event">
+                  <button class="btn-reset podcast__event" aria-label="Запустить подкаст">
                     <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke-width="2" />
@@ -294,7 +294,8 @@
                   </button>
                 </div>
                 <div class="podcast__wrapper">
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                  <button aria-roledescription="Просмотры" class="btn-reset podcast__wrapper-btn podcast__btn-view"
+                    tabindex="-1">
                     <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
@@ -302,7 +303,8 @@
                     </svg>
                     258
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                  <button aria-roledescription="Кнопка поставить лайк. Понравилось"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-like">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
@@ -310,7 +312,8 @@
                     </svg>
                     104
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                  <button aria-roledescription="Кнопка поделиться. Поделились"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-share">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
@@ -326,7 +329,7 @@
             <div class="podcast__content">
               <picture class="podcast__background">
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-2-mobile.jpg">
-                <img src="./img/podcast/podcast-2-desktop.jpg" alt="Картинка альбома">
+                <img src="./img/podcast/podcast-2-desktop.jpg" alt="Второй постер подкаста">
               </picture>
               <time class="podcast__date" datetime="06-11">11 июня</time>
               <div class="podcast__info">
@@ -342,7 +345,7 @@
                       Дмитрий Гутенберг
                     </p>
                   </div>
-                  <button class="btn-reset podcast__event">
+                  <button class="btn-reset podcast__event" aria-label="Запустить подкаст">
                     <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke-width="2" />
@@ -358,7 +361,8 @@
                   </button>
                 </div>
                 <div class="podcast__wrapper">
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                  <button aria-roledescription="Просмотры" class="btn-reset podcast__wrapper-btn podcast__btn-view"
+                    tabindex="-1">
                     <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
@@ -366,7 +370,8 @@
                     </svg>
                     207
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                  <button aria-roledescription="Кнопка поставить лайк. Понравилось"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-like">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
@@ -374,7 +379,8 @@
                     </svg>
                     34
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                  <button aria-roledescription="Кнопка поделиться. Поделились"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-share">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
@@ -390,7 +396,7 @@
             <div class="podcast__content">
               <picture class="podcast__background">
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-3-mobile.jpg">
-                <img src="./img/podcast/podcast-3-desktop.jpg" alt="Картинка альбома">
+                <img src="./img/podcast/podcast-3-desktop.jpg" alt="Третий постер подкаста">
               </picture>
               <time class="podcast__date" datetime="06-08">8 июня</time>
               <div class="podcast__info">
@@ -406,7 +412,7 @@
                       Анна Васильева
                     </p>
                   </div>
-                  <button class="btn-reset podcast__event">
+                  <button class="btn-reset podcast__event" aria-label="Запустить подкаст">
                     <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke-width="2" />
@@ -422,7 +428,8 @@
                   </button>
                 </div>
                 <div class="podcast__wrapper">
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                  <button aria-roledescription="Просмотры" class="btn-reset podcast__wrapper-btn podcast__btn-view"
+                    tabindex="-1">
                     <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
@@ -430,7 +437,8 @@
                     </svg>
                     104
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                  <button aria-roledescription="Кнопка поставить лайк. Понравилось"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-like">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
@@ -438,7 +446,8 @@
                     </svg>
                     54
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                  <button aria-roledescription="Кнопка поделиться. Поделились"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-share">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
@@ -454,7 +463,7 @@
             <div class="podcast__content">
               <picture class="podcast__background">
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-4-mobile.jpg">
-                <img src="./img/podcast/podcast-4-desktop.jpg" alt="Картинка альбома">
+                <img src="./img/podcast/podcast-4-desktop.jpg" alt="Четвертый постер подкаста">
               </picture>
               <time class="podcast__date" datetime="06-05">5 июня</time>
               <div class="podcast__info">
@@ -470,7 +479,7 @@
                       Пётр Дмитриевский
                     </p>
                   </div>
-                  <button class="btn-reset podcast__event">
+                  <button class="btn-reset podcast__event" aria-label="Запустить подкаст">
                     <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke-width="2" />
@@ -486,7 +495,8 @@
                   </button>
                 </div>
                 <div class="podcast__wrapper">
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                  <button aria-roledescription="Просмотры" class="btn-reset podcast__wrapper-btn podcast__btn-view"
+                    tabindex="-1">
                     <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
@@ -494,7 +504,8 @@
                     </svg>
                     87
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                  <button aria-roledescription="Кнопка поставить лайк. Понравилось"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-like">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
@@ -502,7 +513,8 @@
                     </svg>
                     44
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                  <button aria-roledescription="Кнопка поделиться. Поделились"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-share">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
@@ -518,7 +530,7 @@
             <div class="podcast__content">
               <picture class="podcast__background">
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-5-mobile.jpg">
-                <img src="./img/podcast/podcast-5-desktop.jpg" alt="Картинка альбома">
+                <img src="./img/podcast/podcast-5-desktop.jpg" alt="Пятый постер подкаста">
               </picture>
               <time class="podcast__date" datetime="06-02">2 июня</time>
               <div class="podcast__info">
@@ -534,7 +546,7 @@
                       Пётр Дмитриевский
                     </p>
                   </div>
-                  <button class="btn-reset podcast__event">
+                  <button class="btn-reset podcast__event" aria-label="Запустить подкаст">
                     <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke-width="2" />
@@ -550,7 +562,8 @@
                   </button>
                 </div>
                 <div class="podcast__wrapper">
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                  <button aria-roledescription="Просмотры" class="btn-reset podcast__wrapper-btn podcast__btn-view"
+                    tabindex="-1">
                     <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
@@ -558,7 +571,8 @@
                     </svg>
                     64
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                  <button aria-roledescription="Кнопка поставить лайк. Понравилось"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-like">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
@@ -566,7 +580,8 @@
                     </svg>
                     30
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                  <button aria-roledescription="Кнопка поделиться. Поделились"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-share">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
@@ -582,7 +597,7 @@
             <div class="podcast__content">
               <picture class="podcast__background">
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-6-mobile.jpg">
-                <img src="./img/podcast/podcast-6-desktop.jpg" alt="Картинка альбома">
+                <img src="./img/podcast/podcast-6-desktop.jpg" alt="Шестой постер подкаста">
               </picture>
               <time class="podcast__date" datetime="05-28">28 мая</time>
               <div class="podcast__info">
@@ -598,7 +613,7 @@
                       Татьяна Флеганова
                     </p>
                   </div>
-                  <button class="btn-reset podcast__event">
+                  <button class="btn-reset podcast__event" aria-label="Запустить подкаст">
                     <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke-width="2" />
@@ -614,7 +629,8 @@
                   </button>
                 </div>
                 <div class="podcast__wrapper">
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                  <button aria-roledescription="Просмотры" class="btn-reset podcast__wrapper-btn podcast__btn-view"
+                    tabindex="-1">
                     <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
@@ -622,7 +638,8 @@
                     </svg>
                     58
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                  <button aria-roledescription="Кнопка поставить лайк. Понравилось"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-like">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
@@ -630,7 +647,8 @@
                     </svg>
                     29
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                  <button aria-roledescription="Кнопка поделиться. Поделились"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-share">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
@@ -646,7 +664,7 @@
             <div class="podcast__content">
               <picture class="podcast__background">
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-7-mobile.jpg">
-                <img src="./img/podcast/podcast-7-desktop.jpg" alt="Картинка альбома">
+                <img src="./img/podcast/podcast-7-desktop.jpg" alt="Седьмой постер подкаста">
               </picture>
               <time class="podcast__date" datetime="05-22">22 мая</time>
               <div class="podcast__info">
@@ -662,7 +680,7 @@
                       Пётр Дмитриевский
                     </p>
                   </div>
-                  <button class="btn-reset podcast__event">
+                  <button class="btn-reset podcast__event" aria-label="Запустить подкаст">
                     <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke-width="2" />
@@ -678,7 +696,8 @@
                   </button>
                 </div>
                 <div class="podcast__wrapper">
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                  <button aria-roledescription="Просмотры" class="btn-reset podcast__wrapper-btn podcast__btn-view"
+                    tabindex="-1">
                     <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
@@ -686,7 +705,8 @@
                     </svg>
                     55
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                  <button aria-roledescription="Кнопка поставить лайк. Понравилось"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-like">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
@@ -694,7 +714,8 @@
                     </svg>
                     20
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                  <button aria-roledescription="Кнопка поделиться. Поделились"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-share">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
@@ -710,7 +731,7 @@
             <div class="podcast__content">
               <picture class="podcast__background">
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-8-mobile.jpg">
-                <img src="./img/podcast/podcast-8-desktop.jpg" alt="Картинка альбома">
+                <img src="./img/podcast/podcast-8-desktop.jpg" alt="Восьмой постер подкаста">
               </picture>
               <time class="podcast__date" datetime="05-18">18 мая</time>
               <div class="podcast__info">
@@ -726,7 +747,7 @@
                       Татьяна Флеганова
                     </p>
                   </div>
-                  <button class="btn-reset podcast__event">
+                  <button class="btn-reset podcast__event" aria-label="Запустить подкаст">
                     <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke-width="2" />
@@ -742,7 +763,8 @@
                   </button>
                 </div>
                 <div class="podcast__wrapper">
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                  <button aria-roledescription="Просмотры" class="btn-reset podcast__wrapper-btn podcast__btn-view"
+                    tabindex="-1">
                     <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
@@ -750,7 +772,8 @@
                     </svg>
                     24
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                  <button aria-roledescription="Кнопка поставить лайк. Понравилось"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-like">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
@@ -758,7 +781,8 @@
                     </svg>
                     54
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                  <button aria-roledescription="Кнопка поделиться. Поделились"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-share">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
@@ -774,7 +798,7 @@
             <div class="podcast__content">
               <picture class="podcast__background">
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-1-mobile.jpg">
-                <img src="./img/podcast/podcast-1-desktop.jpg" alt="Картинка альбома">
+                <img src="./img/podcast/podcast-1-desktop.jpg" alt="Девятый постер подкаста">
               </picture>
               <time class="podcast__date" datetime="06-14">14 июня</time>
               <div class="podcast__info">
@@ -790,7 +814,7 @@
                       Дмитрий Гутенберг
                     </p>
                   </div>
-                  <button class="btn-reset podcast__event">
+                  <button class="btn-reset podcast__event" aria-label="Запустить подкаст">
                     <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke-width="2" />
@@ -806,7 +830,8 @@
                   </button>
                 </div>
                 <div class="podcast__wrapper">
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                  <button aria-roledescription="Просмотры" class="btn-reset podcast__wrapper-btn podcast__btn-view"
+                    tabindex="-1">
                     <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
@@ -814,7 +839,8 @@
                     </svg>
                     258
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                  <button aria-roledescription="Кнопка поставить лайк. Понравилось"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-like">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
@@ -822,7 +848,8 @@
                     </svg>
                     104
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                  <button aria-roledescription="Кнопка поделиться. Поделились"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-share">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
@@ -838,7 +865,7 @@
             <div class="podcast__content">
               <picture class="podcast__background">
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-2-mobile.jpg">
-                <img src="./img/podcast/podcast-2-desktop.jpg" alt="Картинка альбома">
+                <img src="./img/podcast/podcast-2-desktop.jpg" alt="Десятый постер подкаста">
               </picture>
               <time class="podcast__date" datetime="06-11">11 июня</time>
               <div class="podcast__info">
@@ -854,7 +881,7 @@
                       Дмитрий Гутенберг
                     </p>
                   </div>
-                  <button class="btn-reset podcast__event">
+                  <button class="btn-reset podcast__event" aria-label="Запустить подкаст">
                     <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke-width="2" />
@@ -870,7 +897,8 @@
                   </button>
                 </div>
                 <div class="podcast__wrapper">
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                  <button aria-roledescription="Просмотры" class="btn-reset podcast__wrapper-btn podcast__btn-view"
+                    tabindex="-1">
                     <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
@@ -878,7 +906,8 @@
                     </svg>
                     207
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                  <button aria-roledescription="Кнопка поставить лайк. Понравилось"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-like">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
@@ -886,7 +915,8 @@
                     </svg>
                     34
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                  <button aria-roledescription="Кнопка поделиться. Поделились"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-share">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
@@ -902,7 +932,7 @@
             <div class="podcast__content">
               <picture class="podcast__background">
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-3-mobile.jpg">
-                <img src="./img/podcast/podcast-3-desktop.jpg" alt="Картинка альбома">
+                <img src="./img/podcast/podcast-3-desktop.jpg" alt="Одиннадцатый постер подкаста">
               </picture>
               <time class="podcast__date" datetime="06-08">8 июня</time>
               <div class="podcast__info">
@@ -918,7 +948,7 @@
                       Анна Васильева
                     </p>
                   </div>
-                  <button class="btn-reset podcast__event">
+                  <button class="btn-reset podcast__event" aria-label="Запустить подкаст">
                     <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke-width="2" />
@@ -934,7 +964,8 @@
                   </button>
                 </div>
                 <div class="podcast__wrapper">
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                  <button aria-roledescription="Просмотры" class="btn-reset podcast__wrapper-btn podcast__btn-view"
+                    tabindex="-1">
                     <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
@@ -942,7 +973,8 @@
                     </svg>
                     104
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                  <button aria-roledescription="Кнопка поставить лайк. Понравилось"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-like">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
@@ -950,7 +982,8 @@
                     </svg>
                     54
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                  <button aria-roledescription="Кнопка поделиться. Поделились"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-share">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
@@ -966,7 +999,7 @@
             <div class="podcast__content">
               <picture class="podcast__background">
                 <source media="(max-width: 576px)" srcset="./img/podcast/podcast-4-mobile.jpg">
-                <img src="./img/podcast/podcast-4-desktop.jpg" alt="Картинка альбома">
+                <img src="./img/podcast/podcast-4-desktop.jpg" alt="Двенадцатый постер подкаста">
               </picture>
               <time class="podcast__date" datetime="06-05">5 июня</time>
               <div class="podcast__info">
@@ -982,7 +1015,7 @@
                       Пётр Дмитриевский
                     </p>
                   </div>
-                  <button class="btn-reset podcast__event">
+                  <button class="btn-reset podcast__event" aria-label="Запустить подкаст">
                     <svg class="podcast__btn-play" width="48" height="48" viewBox="0 0 48 48" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke-width="2" />
@@ -998,7 +1031,8 @@
                   </button>
                 </div>
                 <div class="podcast__wrapper">
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-view" tabindex="-1">
+                  <button aria-roledescription="Просмотры" class="btn-reset podcast__wrapper-btn podcast__btn-view"
+                    tabindex="-1">
                     <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
@@ -1006,7 +1040,8 @@
                     </svg>
                     87
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-like">
+                  <button aria-roledescription="Кнопка поставить лайк. Понравилось"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-like">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.89521 10.7681L5.89449 10.7674C4.21072 9.2313 2.8536 7.99202 1.9114 6.83309C0.975032 5.68133 0.5 4.66944 0.5 3.59673C0.5 1.85584 1.85199 0.5 3.575 0.5C4.55347 0.5 5.50126 0.960719 6.11836 1.68979L6.5 2.14068L6.88164 1.68979C7.49874 0.960719 8.44653 0.5 9.425 0.5C11.148 0.5 12.5 1.85584 12.5 3.59673C12.5 4.66945 12.025 5.68136 11.0885 6.83404C10.1462 7.99382 8.7892 9.23462 7.10549 10.774C7.10537 10.7741 7.10524 10.7742 7.10512 10.7743L6.50128 11.3232L5.89521 10.7681Z">
@@ -1014,7 +1049,8 @@
                     </svg>
                     44
                   </button>
-                  <button class="btn-reset podcast__wrapper-btn podcast__btn-share">
+                  <button aria-roledescription="Кнопка поделиться. Поделились"
+                    class="btn-reset podcast__wrapper-btn podcast__btn-share">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M8.44581 10.1257L8.75669 10.3028L9.02466 10.0657C9.28837 9.8324 9.62624 9.68876 10 9.68876C10.8073 9.68876 11.4467 10.3298 11.4467 11.0944C11.4467 11.8589 10.8073 12.5 10 12.5C9.19271 12.5 8.55333 11.8589 8.55333 11.0944C8.55333 10.9965 8.56707 10.8929 8.5925 10.7883L8.68139 10.4229L8.35491 10.2362L3.60824 7.5213L3.29315 7.34108L3.02421 7.58486C2.75016 7.83325 2.39465 7.98394 2 7.98394C1.15938 7.98394 0.5 7.3233 0.5 6.5261C0.5 5.7289 1.15938 5.06827 2 5.06827C2.39465 5.06827 2.75016 5.21896 3.02421 5.46735L3.29288 5.71088L3.60783 5.53115L8.30783 2.84892L8.62804 2.66618L8.54811 2.30626C8.51724 2.16726 8.5 2.0594 8.5 1.95783C8.5 1.16063 9.15938 0.5 10 0.5C10.8406 0.5 11.5 1.16063 11.5 1.95783C11.5 2.75503 10.8406 3.41566 10 3.41566C9.60535 3.41566 9.24984 3.26498 8.97579 3.01658L8.70712 2.77305L8.39217 2.95279L3.69217 5.63502L3.37196 5.81776L3.45189 6.17767C3.48276 6.31667 3.5 6.42453 3.5 6.5261C3.5 6.62767 3.48276 6.73554 3.45189 6.87454L3.37191 7.23471L3.69247 7.41736L8.44581 10.1257Z">
@@ -1034,7 +1070,7 @@
         </div>
       </div>
     </section>
-    <section class="broadcast">
+    <section id="broadcast" class="broadcast">
       <div class="container broadcast__container">
         <div class="broadcast__select">
           <h2 class="title broadcast__title">
@@ -1056,7 +1092,7 @@
               <div class="broadcast__article">
                 <picture class="broadcast__picture">
                   <source media="(max-width: 576px)" srcset="./img/broadcast/broadcast-1-mobile.jpg">
-                  <img src="./img/broadcast/broadcast-1-desktop.jpg" alt="Постер передачи">
+                  <img src="./img/broadcast/broadcast-1-desktop.jpg" alt="Первый постер передачи">
                 </picture>
                 <div class="broadcast__info">
                   <div class="broadcast__info-text">
@@ -1083,7 +1119,7 @@
               <div class="broadcast__article">
                 <picture class="broadcast__picture">
                   <source media="(max-width: 576px)" srcset="./img/broadcast/broadcast-2-mobile.jpg">
-                  <img src="./img/broadcast/broadcast-2-desktop.jpg" alt="Постер передачи">
+                  <img src="./img/broadcast/broadcast-2-desktop.jpg" alt="Второй постер передачи">
                 </picture>
                 <div class="broadcast__info">
                   <div class="broadcast__info-text">
@@ -1110,7 +1146,7 @@
               <div class="broadcast__article">
                 <picture class="broadcast__picture">
                   <source media="(max-width: 576px)" srcset="./img/broadcast/broadcast-3-mobile.jpg">
-                  <img src="./img/broadcast/broadcast-3-desktop.jpg" alt="Постер передачи">
+                  <img src="./img/broadcast/broadcast-3-desktop.jpg" alt="Третий постер передачи">
                 </picture>
                 <div class="broadcast__info">
                   <div class="broadcast__info-text">
@@ -1137,7 +1173,7 @@
               <div class="broadcast__article">
                 <picture class="broadcast__picture">
                   <source media="(max-width: 576px)" srcset="./img/broadcast/broadcast-4-mobile.jpg">
-                  <img src="./img/broadcast/broadcast-4-desktop.jpg" alt="Постер передачи">
+                  <img src="./img/broadcast/broadcast-4-desktop.jpg" alt="Четвертый постер передачи">
                 </picture>
                 <div class="broadcast__info">
                   <div class="broadcast__info-text">
@@ -1164,7 +1200,7 @@
               <div class="broadcast__article">
                 <picture class="broadcast__picture">
                   <source media="(max-width: 576px)" srcset="./img/broadcast/broadcast-5-mobile.jpg">
-                  <img src="./img/broadcast/broadcast-5-desktop.jpg" alt="Постер передачи">
+                  <img src="./img/broadcast/broadcast-5-desktop.jpg" alt="Пятый постер передачи">
                 </picture>
                 <div class="broadcast__info">
                   <div class="broadcast__info-text">
@@ -1191,7 +1227,7 @@
               <div class="broadcast__article">
                 <picture class="broadcast__picture">
                   <source media="(max-width: 576px)" srcset="./img/broadcast/broadcast-6-mobile.jpg">
-                  <img src="./img/broadcast/broadcast-6-desktop.jpg" alt="Постер передачи">
+                  <img src="./img/broadcast/broadcast-6-desktop.jpg" alt="Шестой постер передачи">
                 </picture>
                 <div class="broadcast__info">
                   <div class="broadcast__info-text">
@@ -1226,14 +1262,14 @@
         </div>
       </div>
     </section>
-    <section class="guest">
+    <section id="visitors" class="guest">
       <div class="container guest__container">
         <h2 class="title guest__title">
           Гости
         </h2>
-        <p class="guest__descr-up">
+        <strong class="guest__descr-up">
           У&nbsp;нас бывают:
-        </p>
+        </strong>
         <p class="guest__descr-down">
           Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи
           и&nbsp;много других интересных гостей!
@@ -1246,50 +1282,65 @@
               </h3>
               <ul class="list-reset guest__name blogger">
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Сергей Денисов</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Сергей
+                    Денисов</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Евгений Воиновский</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Евгений
+                    Воиновский</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Олег Свиридовский</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Олег
+                    Свиридовский</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Денис Тельман</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Денис
+                    Тельман</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Матвей Мечников</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Матвей
+                    Мечников</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name blogger__name-active" data-path="olga-martynova">Ольга
+                  <button class="btn-reset blogger__name blogger__name-active" aria-roledescription="Блогер"
+                    data-path="olga-martynova">Ольга
                     Мартынова</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Владислав Кауперс</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер"
+                    data-path="none">Владислав Кауперс</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Юрий Горин</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Юрий
+                    Горин</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Константин Прусино</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер"
+                    data-path="none">Константин Прусино</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Дмитрий Михалок</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Дмитрий
+                    Михалок</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Михаил Пожитников</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Михаил
+                    Пожитников</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Максим Сергеев</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Максим
+                    Сергеев</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Иван Калитников</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Иван
+                    Калитников</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Пётр Пиотровский</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Пётр
+                    Пиотровский</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" data-path="none">Георгий Полуян</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Георгий
+                    Полуян</button>
                 </li>
               </ul>
               <svg class="guest__arrow" width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -1370,7 +1421,7 @@
                 <source media="(min-width: 902px)" srcset="./img/guest/none-tablet.jpg">
                 <source media="(min-width: 576px)" srcset="./img/guest/none-sm-tablet.jpg">
                 <source media="(min-width: 320px)" srcset="./img/guest/none-mobile.jpg">
-                <img src="./img/guest/none-desktop.jpg" alt="">
+                <img src="./img/guest/none-desktop.jpg" alt="Фотография отсутствует">
               </picture>
             </div>
             <div class="tab__item tab__item-active olga-martynova user" data-target="olga-martynova">
@@ -1378,11 +1429,11 @@
                 <source media="(min-width: 902px)" srcset="./img/guest/olga-tablet.jpg">
                 <source media="(min-width: 576px)" srcset="./img/guest/olga-sm-tablet.jpg">
                 <source media="(min-width: 320px)" srcset="./img/guest/olga-mobile.jpg">
-                <img src="./img/guest/olga-desktop.jpg" alt="">
+                <img src="./img/guest/olga-desktop.jpg" alt="Портрет Ольга Мартынова">
               </picture>
               <ul class="list-reset user__social">
                 <li class="user__item">
-                  <a class="user__link user-instagram" href="#">
+                  <a class="user__link user-instagram" href="#" aria-label="Инстаграм">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_24531_5305)">
                         <path
@@ -1397,7 +1448,7 @@
                   </a>
                 </li>
                 <li class="user__item">
-                  <a class="user__link user-facebook" href="#">
+                  <a class="user__link user-facebook" href="#" aria-label="Фейсбук">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_24531_5308)">
                         <path
@@ -1412,7 +1463,7 @@
                   </a>
                 </li>
                 <li class="user__item">
-                  <a class="user__link user-twitter" href="#">
+                  <a class="user__link user-twitter" href="#" aria-label="Твитер">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_24531_5311)">
                         <path
@@ -1435,15 +1486,15 @@
                 газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея
                 &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.
               </p>
-              <button class="btn-reset user__btn">
+              <a href="#" class="btn-reset user__btn">
                 Эфиры с&nbsp;гостем
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="playlist">
+    <section id="playlists" class="playlist">
       <div class="container playlist__container">
         <div class="playlist__select">
           <h2 class="title playlist__title">
@@ -1527,9 +1578,9 @@
               <div class="clip__content" tabindex="0">
                 <picture class="clip__background">
                   <source media="(max-width: 1200px)" srcset="./img/playlist/clip-1-tablet.jpg">
-                  <img src="./img/playlist/clip-1-desktop.jpg" alt="">
+                  <img src="./img/playlist/clip-1-desktop.jpg" alt="Первый постер плейлиста">
                 </picture>
-                <img src="./img/playlist/ru-flag.jpg" alt="" class="clip__country">
+                <img src="./img/playlist/ru-flag.jpg" alt="Российский плейлист" class="clip__country">
                 <div class="clip__text">
                   <h3 class="clip__title">
                     Ploho
@@ -1544,9 +1595,9 @@
               <div class="clip__content" tabindex="0">
                 <picture class="clip__background">
                   <source media="(max-width: 1200px)" srcset="./img/playlist/clip-2-tablet.jpg">
-                  <img src="./img/playlist/clip-2-desktop.jpg" alt="">
+                  <img src="./img/playlist/clip-2-desktop.jpg" alt="Второй постер плейлиста">
                 </picture>
-                <img src="./img/playlist/ru-flag.jpg" alt="" class="clip__country">
+                <img src="./img/playlist/ru-flag.jpg" alt="Российский плейлист" class="clip__country">
                 <div class="clip__text">
                   <h3 class="clip__title">
                     Molchat Doma
@@ -1561,9 +1612,9 @@
               <div class="clip__content" tabindex="0">
                 <picture class="clip__background">
                   <source media="(max-width: 1200px)" srcset="./img/playlist/clip-3-tablet.jpg">
-                  <img src="./img/playlist/clip-3-desktop.jpg" alt="">
+                  <img src="./img/playlist/clip-3-desktop.jpg" alt="Третий постер плейлиста">
                 </picture>
-                <img src="./img/playlist/ru-flag.jpg" alt="" class="clip__country">
+                <img src="./img/playlist/ru-flag.jpg" alt="Российский плейлист" class="clip__country">
                 <div class="clip__text">
                   <h3 class="clip__title">
                     Motorama
@@ -1578,9 +1629,9 @@
               <div class="clip__content" tabindex="0">
                 <picture class="clip__background">
                   <source media="(max-width: 1200px)" srcset="./img/playlist/clip-4-tablet.jpg">
-                  <img src="./img/playlist/clip-4-desktop.jpg" alt="">
+                  <img src="./img/playlist/clip-4-desktop.jpg" alt="Четвертый постер плейлиста">
                 </picture>
-                <img src="./img/playlist/ru-flag.jpg" alt="" class="clip__country">
+                <img src="./img/playlist/ru-flag.jpg" alt="Российский плейлист" class="clip__country">
                 <div class="clip__text">
                   <h3 class="clip__title">
                     Human Tetris
@@ -1595,9 +1646,9 @@
               <div class="clip__content" tabindex="0">
                 <picture class="clip__background">
                   <source media="(max-width: 1200px)" srcset="./img/playlist/clip-5-tablet.jpg">
-                  <img src="./img/playlist/clip-5-desktop.jpg" alt="">
+                  <img src="./img/playlist/clip-5-desktop.jpg" alt="Пятый постер плейлиста">
                 </picture>
-                <img src="./img/playlist/ru-flag.jpg" alt="" class="clip__country">
+                <img src="./img/playlist/ru-flag.jpg" alt="Российский плейлист" class="clip__country">
                 <div class="clip__text">
                   <h3 class="clip__title">
                     Буерак
@@ -1612,9 +1663,9 @@
               <div class="clip__content" tabindex="0">
                 <picture class="clip__background">
                   <source media="(max-width: 1200px)" srcset="./img/playlist/clip-6-tablet.jpg">
-                  <img src="./img/playlist/clip-6-desktop.jpg" alt="">
+                  <img src="./img/playlist/clip-6-desktop.jpg" alt="Шестой постер плейлиста">
                 </picture>
-                <img src="./img/playlist/ru-flag.jpg" alt="" class="clip__country">
+                <img src="./img/playlist/ru-flag.jpg" alt="Российский плейлист" class="clip__country">
                 <div class="clip__text">
                   <h3 class="clip__title">
                     Июльские Дни
@@ -1629,9 +1680,9 @@
               <div class="clip__content" tabindex="0">
                 <picture class="clip__background">
                   <source media="(max-width: 1200px)" srcset="./img/playlist/clip-7-tablet.jpg">
-                  <img src="./img/playlist/clip-7-desktop.jpg" alt="">
+                  <img src="./img/playlist/clip-7-desktop.jpg" alt="Седьмой постер плейлиста">
                 </picture>
-                <img src="./img/playlist/uk-flag.jpg" alt="" class="clip__country">
+                <img src="./img/playlist/uk-flag.jpg" alt="Британский плейлист" class="clip__country">
                 <div class="clip__text">
                   <h3 class="clip__title">
                     Joy Division
@@ -1646,9 +1697,9 @@
               <div class="clip__content" tabindex="0">
                 <picture class="clip__background">
                   <source media="(max-width: 1200px)" srcset="./img/playlist/clip-8-tablet.jpg">
-                  <img src="./img/playlist/clip-8-desktop.jpg" alt="">
+                  <img src="./img/playlist/clip-8-desktop.jpg" alt="Восьмой постер плейлиста">
                 </picture>
-                <img src="./img/playlist/uk-flag.jpg" alt="" class="clip__country">
+                <img src="./img/playlist/uk-flag.jpg" alt="Британский плейлист" class="clip__country">
                 <div class="clip__text">
                   <h3 class="clip__title">
                     The Cure
@@ -1663,9 +1714,9 @@
               <div class="clip__content" tabindex="0">
                 <picture class="clip__background">
                   <source media="(max-width: 1200px)" srcset="./img/playlist/clip-9-tablet.jpg">
-                  <img src="./img/playlist/clip-9-desktop.jpg" alt="">
+                  <img src="./img/playlist/clip-9-desktop.jpg" alt="Девятый постер плейлиста">
                 </picture>
-                <img src="./img/playlist/uk-flag.jpg" alt="" class="clip__country">
+                <img src="./img/playlist/uk-flag.jpg" alt="Британский плейлист" class="clip__country">
                 <div class="clip__text">
                   <h3 class="clip__title">
                     The Smiths
@@ -1680,9 +1731,9 @@
               <div class="clip__content" tabindex="0">
                 <picture class="clip__background">
                   <source media="(max-width: 1200px)" srcset="./img/playlist/clip-10-tablet.jpg">
-                  <img src="./img/playlist/clip-10-desktop.jpg" alt="">
+                  <img src="./img/playlist/clip-10-desktop.jpg" alt="Десятый постер плейлиста">
                 </picture>
-                <img src="./img/playlist/uk-flag.jpg" alt="" class="clip__country">
+                <img src="./img/playlist/uk-flag.jpg" alt="Британский плейлист" class="clip__country">
                 <div class="clip__text">
                   <h3 class="clip__title">
                     New Order
@@ -1697,9 +1748,9 @@
               <div class="clip__content" tabindex="0">
                 <picture class="clip__background">
                   <source media="(max-width: 1200px)" srcset="./img/playlist/clip-11-tablet.jpg">
-                  <img src="./img/playlist/clip-11-desktop.jpg" alt="">
+                  <img src="./img/playlist/clip-11-desktop.jpg" alt="Одиннадцатый постер плейлиста">
                 </picture>
-                <img src="./img/playlist/uk-flag.jpg" alt="" class="clip__country">
+                <img src="./img/playlist/uk-flag.jpg" alt="Британский плейлист" class="clip__country">
                 <div class="clip__text">
                   <h3 class="clip__title">
                     Bauhaus
@@ -1714,9 +1765,9 @@
               <div class="clip__content" tabindex="0">
                 <picture class="clip__background">
                   <source media="(max-width: 1200px)" srcset="./img/playlist/clip-12-tablet.jpg">
-                  <img src="./img/playlist/clip-12-desktop.jpg" alt="">
+                  <img src="./img/playlist/clip-12-desktop.jpg" alt="Двенадцатый постер плейлиста">
                 </picture>
-                <img src="./img/playlist/uk-flag.jpg" alt="" class="clip__country">
+                <img src="./img/playlist/uk-flag.jpg" alt="Британский плейлист" class="clip__country">
                 <div class="clip__text">
                   <h3 class="clip__title">
                     Gang Of&nbsp;Four
@@ -1730,18 +1781,18 @@
           </ul>
         </div>
         <div class="playlist__copy">
-          <p class="playlist__warning">
+          <strong class="playlist__warning">
             Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную
             для&nbsp;несовершеннолетних
-          </p>
-          <p class="playlist__warning-date">
+          </strong>
+          <i class="playlist__warning-date">
             &copy;&nbsp;2021&nbsp;l W-Wave
-          </p>
-          <img src="./img/playlist/age.png" alt="">
+          </i>
+          <img src="./img/playlist/age.png" alt="Возрастное ограничение 18+">
         </div>
       </div>
     </section>
-    <section class="advertising">
+    <section id="adv" class="advertising">
       <div class="container advertising__container">
         <div class="advertising__picture">
           <div class="advertising__radio">
@@ -1749,14 +1800,14 @@
               <source media="(max-width: 576px)" srcset="./img/advertising/radio-mobile.png">
               <source media="(max-width: 902px)" srcset="./img/advertising/radio-sm-tablet.png">
               <source media="(max-width: 1200px)" srcset="./img/advertising/radio-tablet.png">
-              <img src="./img/advertising/radio-desktop.png" alt="">
+              <img src="./img/advertising/radio-desktop.png" alt="Радиоприемник-колонка">
             </picture>
           </div>
           <picture class="advertising__new">
             <source media="(max-width: 576px)" srcset="./img/advertising/new-mobile.png">
             <source media="(max-width: 902px)" srcset="./img/advertising/new-sm-tablet.png">
             <source media="(max-width: 1200px)" srcset="./img/advertising/new-tablet.png">
-            <img src="./img/advertising/new-desktop.png" alt="">
+            <img src="./img/advertising/new-desktop.png" alt="Новинка">
           </picture>
         </div>
         <div class="advertising__info">
@@ -1768,14 +1819,14 @@
             начали свой путь радиовещателей, нам хочется, чтобы&nbsp;вы&nbsp;могли как следует нас расслышать:)
           </p>
           <p class="advertising__descr advertising__descr-down">
-            Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm. Тщательный подбор всех делатей,
+            Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm. Тщательный подбор всех деталей,
             ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах,
             но&nbsp;мы&nbsp;активно трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!
           </p>
           <div class="advertising__wrapper">
-            <p class="advertising__price">
+            <strong class="advertising__price">
               2&nbsp;800&nbsp;₽
-            </p>
+            </strong>
             <button class="btn-reset advertising__btn">
               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_44122_968)">

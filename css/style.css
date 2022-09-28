@@ -225,6 +225,22 @@ body {
   color: var(--color-bold-blue);
 }
 
+.up__auth:focus {
+  background-color: var(--color-light-purple);
+  color: var(--color-bold-blue);
+}
+
+.up__auth:hover {
+  background-color: var(--color-bold-blue);
+  color: var(--color-white);
+}
+
+.up__auth:active {
+  border-color: var(--color-bold-purple);
+  background-color: var(--color-bold-purple);
+  color: var(--color-white);
+}
+
 .header {
   background-color: var(--color-white);
 }
@@ -283,6 +299,7 @@ body {
 }
 
 .top__input.top__form-visible {
+  visibility: visible;
   opacity: 1;
   transform: translateX(0);
   transition: all .2s ease-in-out;
@@ -296,7 +313,7 @@ body {
   position: absolute;
   right: 175px;
   bottom: 12px;
-  display: block;
+  visibility: hidden;
   padding: 10px;
   padding-left: 0;
   padding-bottom: 0;
@@ -1367,6 +1384,7 @@ body {
 }
 
 .guest__descr-up {
+  display: block;
   margin: 0;
   margin-bottom: 8px;
   font-weight: 700;
@@ -1576,6 +1594,7 @@ path {
 }
 
 .user__btn {
+  display: inline-block;
   padding: 10px 18px;
   outline: none;
   border: 2px solid var(--color-light-purple);
@@ -1903,6 +1922,7 @@ path {
 }
 
 .playlist__warning {
+  display: block;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -1911,6 +1931,7 @@ path {
 }
 
 .playlist__warning-date {
+  display: block;
   margin: 0;
   margin-bottom: 6px;
   font-style: italic;
@@ -1978,6 +1999,7 @@ path {
 }
 
 .advertising__price {
+  display: block;
   margin: 0;
   margin-bottom: 30px;
   font-weight: 500;

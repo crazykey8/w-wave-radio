@@ -1,4 +1,10 @@
 
+$(document).on("click", "nav a", function(e) {
+  e.preventDefault();
+  var id  = $(this).attr('href');
+  var top = $(id).offset().top;
+  $('body, html').animate({scrollTop: top}, 800);
+});
 
 document.querySelector('.burger').addEventListener('click',
   function () {
@@ -8,7 +14,7 @@ document.querySelector('.burger').addEventListener('click',
     document.querySelector('.bottom__nav').classList.toggle('header__top-active');
     document.body.classList.toggle('stop-scroll');
   });
-document.querySelectorAll('.top__link').forEach(function (el) {
+document.querySelectorAll('nav a').forEach(function (el) {
   el.addEventListener('click', function () {
     document.querySelector('.burger').classList.remove('open');
     document.querySelector('.header').classList.toggle('header-active');
