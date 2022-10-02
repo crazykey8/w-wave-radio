@@ -1,3 +1,13 @@
+@media (max-width: 1280px) {
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 902px;
@@ -28,7 +38,7 @@
   }
 
   .bottom__item:not(:last-child) {
-    margin-right: 27px;
+    margin-right: 28px;
   }
 
   .btn__playaudio {
@@ -69,7 +79,7 @@
   }
 
   .podcast {
-    padding-bottom: 88px;
+    padding-bottom: 92px;
   }
 
   .podcast__container {
@@ -93,7 +103,8 @@
   }
 
   .broadcast {
-    padding-bottom: 66px;
+    padding-top: 95px;
+    padding-bottom: 64px;
   }
 
   .broadcast__container {
@@ -109,7 +120,7 @@
   }
 
   .broadcast__item {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 
   .broadcast__item:not(:nth-child(3n)) {
@@ -121,7 +132,7 @@
   }
 
   .broadcast__archive {
-    bottom: 318px;
+    bottom: 319px;
   }
 
   .broadcast__btn-archive {
@@ -149,12 +160,21 @@
     justify-content: space-between;
   }
 
+  .tab__photo {
+    width: 255px;
+    height: 159px;
+  }
+
   .guest__tab {
     width: 255px;
   }
 
   .blogger__item {
     margin-right: 0;
+  }
+
+  .user__name {
+    margin-bottom: 11px;
   }
 
   .user__social {
@@ -271,6 +291,66 @@
     bottom: 74%;
     width: 25%;
   }
+
+  .info__container {
+    padding: 0 39px;
+    background-position: 94% 5%;
+  }
+
+  .info__content {
+    max-width: 539px;
+    padding-right: 0;
+    background-image: none;
+  }
+
+  .speaker__content {
+    max-width: 397px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-next::after,
+  .swiper-button-prev,
+  .swiper-button-prev::after {
+    display: block;
+  }
+
+  .swiper-button-next {
+    right: -68px;
+  }
+
+  .swiper-button-prev {
+    left: -68px;
+  }
+
+  .speaker__picture {
+    width: 397px;
+  }
+
+  .info__slider {
+    margin-bottom: 13px;
+  }
+
+  .info__textarea {
+    border-radius: 30px;
+  }
+
+  .info__field-name {
+    width: 397px;
+  }
+
+  .info__field-mail {
+    width: 397px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
 }
 
 @media (max-width: 902px) {
@@ -280,6 +360,10 @@
 
   .up {
     padding: 18px 18px;
+  }
+
+  .up__logo {
+    margin-top: 1px;
   }
 
   .burger {
@@ -389,7 +473,7 @@
   }
 
   .podcast {
-    padding-bottom: 90px;
+    padding-bottom: 93px;
   }
 
   .podcast__container {
@@ -411,7 +495,7 @@
   .broadcast {
     position: relative;
     padding-top: 95px;
-    padding-bottom: 28px;
+    padding-bottom: 31px;
   }
 
   .broadcast__title {
@@ -435,9 +519,17 @@
     margin-bottom: 38px;
   }
 
+  .broadcast__content {
+    padding-top: 11px;
+  }
+
+  .broadcast__btn-archive {
+    margin-bottom: 6px;
+  }
+
   .broadcast__archive {
     position: relative;
-    bottom: 0;
+    bottom: 1px;
     left: 18%;
     width: 395px;
     margin-top: 60px;
@@ -449,7 +541,7 @@
   }
 
   .guest {
-    padding-bottom: 96px;
+    padding-bottom: 93px;
   }
 
   .guest__container {
@@ -463,15 +555,28 @@
   .guest__list {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 48px;
+    margin-bottom: 51px;
   }
 
   .blogger__item {
-    margin-bottom: 27px;
+    margin-bottom: 26px;
+  }
+
+  .tab__photo {
+    width: 100%;
+    height: 220px;
   }
 
   .guest__tab {
     width: 100%;
+  }
+
+  .user__social {
+    margin-bottom: 9px;
+  }
+
+  .user__name {
+    margin-bottom: 9px;
   }
 
   .user__item:not(:last-child) {
@@ -483,7 +588,7 @@
   }
 
   .playlist {
-    padding-bottom: 100px;
+    padding-bottom: 99px;
   }
 
   .playlist__container {
@@ -545,6 +650,66 @@
   .advertising__descr-up {
     margin-bottom: 14px;
   }
+
+  .info {
+    background-image: url('../img/about-us/spiral-long.png');
+    background-repeat: no-repeat;
+    background-position: left 32%;
+  }
+
+  .info__container {
+    padding: 0 18px;
+    background-image: none;
+  }
+
+  .info__content {
+    padding-bottom: 140px;
+    background-image: url('../img/about-us/sphere-mobile.png');
+    background-position: right bottom;
+  }
+
+  .swiper-button-next,
+  .swiper-button-next::after,
+  .swiper-button-prev,
+  .swiper-button-prev::after {
+    display: block;
+  }
+
+  .speaker__picture {
+    min-height: 255px;
+    width: 255px;
+  }
+
+  .info__slider {
+    margin-bottom: 30px;
+  }
+
+  .info__input {
+    flex-direction: column;
+  }
+
+  .info__field-name {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .info__field-mail {
+    width: 100%;
+  }
+}
+
+@media (max-width: 740px) {
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .info__content {
+    background-image: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -554,6 +719,10 @@
 
   .up {
     padding: 9px 32px;
+  }
+
+  .up__logo {
+    margin-top: 8px;
   }
 
   .up__logo svg {
@@ -739,12 +908,12 @@
   }
 
   .btn__mobile svg {
-    margin-right: 7px;
+    margin-right: 5px;
     transition: all .2s ease-in-out;
   }
 
   .hero {
-    padding-bottom: 55px;
+    padding-bottom: 56px;
   }
 
   .hero__container {
@@ -778,7 +947,7 @@
 
   .podcast {
     padding-top: 55px;
-    padding-bottom: 49px;
+    padding-bottom: 54px;
   }
 
   .podcast__container {
@@ -877,7 +1046,7 @@
   }
 
   .podcast__btn {
-    padding: 17px 30px;
+    padding: 15px 28px;
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
@@ -889,7 +1058,7 @@
   }
 
   .broadcast__container {
-    padding: 0px 31px;
+    padding: 0px 32px;
   }
 
   .broadcast__author {
@@ -902,6 +1071,14 @@
 
   .broadcast__select {
     margin-bottom: 21px;
+  }
+
+  .broadcast__content {
+    padding-top: 8px;
+  }
+
+  .broadcast__item {
+    margin-bottom: 29px;
   }
 
   .broadcast__picture {
@@ -964,9 +1141,9 @@
     display: flex;
     flex-direction: column-reverse;
     left: 0;
-    bottom: 34px;
+    bottom: 30px;
     width: 395px;
-    margin-top: 65px;
+    margin-top: 61px;
     background-image: url('../img/broadcast/mic-mobile.png');
   }
 
@@ -992,7 +1169,7 @@
   }
 
   .guest__container {
-    padding: 0 30px;
+    padding: 0 32px;
   }
 
   .guest__title {
@@ -1022,6 +1199,10 @@
 
   .guest__item:nth-last-child(2) {
     display: none;
+  }
+
+  .tab__photo {
+    height: 160px;
   }
 
   .guest__item svg {
@@ -1064,6 +1245,14 @@
 
   .user__item:not(:last-child) {
     margin-right: 19px;
+  }
+
+  .user__name {
+    margin-bottom: 8px;
+  }
+
+  .user__descr {
+    margin-bottom: 28px;
   }
 
   .user__link svg {
@@ -1257,6 +1446,105 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
+  }
+
+  .info {
+    padding-top: 53px;
+    padding-bottom: 43px;
+    background-image: none;
+  }
+
+  .info__container {
+    padding: 0 32px;
+  }
+
+  .info__content {
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-bottom: 26px;
+  }
+
+  .info__title {
+    margin-bottom: 10px;
+  }
+
+  .info__strong {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .info__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .speaker__content {
+    min-height: 210px;
+    max-width: 113px;
+  }
+
+  .speaker__picture {
+    min-height: 113px;
+    width: 113px;
+  }
+
+  .speaker__text {
+    margin-top: 13px;
+  }
+
+  .speaker__name {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .speaker__descr {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .info__label-textarea .just-validate-error-label {
+    bottom: 157px;
+  }
+
+  .info__textarea {
+    border-radius: 20px;
+    padding: 17px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .info__field {
+    padding: 17px 24px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .info__btn {
+    margin-bottom: 19px;
+    padding: 17px 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .info__checkbox-custom {
+    padding-left: 21px;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 9px;
+  }
+
+  .just-validate-error-label {
+    bottom: -14px;
   }
 
 }

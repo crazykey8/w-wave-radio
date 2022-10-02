@@ -1,9 +1,9 @@
 
-$(document).on("click", "nav a", function(e) {
+$(document).on("click", "nav a", function (e) {
   e.preventDefault();
-  var id  = $(this).attr('href');
+  var id = $(this).attr('href');
   var top = $(id).offset().top;
-  $('body, html').animate({scrollTop: top}, 800);
+  $('body, html').animate({ scrollTop: top }, 800);
 });
 
 document.querySelector('.burger').addEventListener('click',
@@ -88,7 +88,6 @@ $(".accordion-list").accordion({
 document.querySelectorAll('.blogger__name').forEach(function (tabsBtn) {
   tabsBtn.addEventListener('click', function (e) {
     const path = e.currentTarget.dataset.path;
-
     document.querySelectorAll('.blogger__name').forEach(function (btn) {
       btn.classList.remove('blogger__name-active')
     });
@@ -102,3 +101,66 @@ document.querySelectorAll('.blogger__name').forEach(function (tabsBtn) {
 
 const simplebar = new SimpleBar(document.getElementById('playlist'));
 simplebar.contentWrapperEl.setAttribute('tabindex', '-1');
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    1200: {
+      spaceBetween: 30,
+      slidesPerView: 4,
+    },
+    576: {
+      spaceBetween: 30,
+      slidesPerView: 2,
+    },
+    320: {
+      spaceBetween: 10,
+      slidesPerView: 2,
+    }
+  }
+});
+
+const validation = new JustValidate('#form');
+validation
+  .addField('#name', [
+    {
+      rule: 'required',
+      errorMessage: 'Вы не ввели имя',
+    },
+    {
+      rule: 'minLength',
+      value: 3,
+      errorMessage: 'Имя должно состоять от 3 до 30 букв'
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+      errorMessage: 'Имя должно состоять от 3 до 30 букв'
+    },
+  ])
+  .addField('#mail', [
+    {
+      rule: 'required',
+      errorMessage: 'Вы не ввели e-mail'
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Некорекктный e-mail'
+    },
+  ])
+  .addField('#checkbox', [
+    {
+      rule: 'required',
+      errorMessage: 'Вы забыли поставить галочку'
+    },
+  ])
+  .addField('#comment', [
+    {
+      rule: 'required',
+      errorMessage: 'Вы забыли оставить отзыв'
+    }
+  ]);

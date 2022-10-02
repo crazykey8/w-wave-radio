@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon/favicon.ico">
+  <link rel="stylesheet" href="./libs/styles/swiper-bundle-min.css">
   <link rel="stylesheet" href="./libs/styles/simplebar.css">
   <link rel="stylesheet" href="./libs/styles/choices.min.css">
   <link rel="stylesheet" href="./css/normalize.css">
@@ -220,7 +221,7 @@
               <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white" />
               <path d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z" fill="white" />
             </svg>
-            Что в эфире
+            Что в эфире?
           </button>
         </div>
         <img class="bottom__image" src="./img/header/age.jpg" alt="Возрастное ограничение 12+">
@@ -1307,16 +1308,16 @@
                     Мартынова</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" aria-roledescription="Блогер"
-                    data-path="none">Владислав Кауперс</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Владислав
+                    Кауперс</button>
                 </li>
                 <li class="blogger__item">
                   <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Юрий
                     Горин</button>
                 </li>
                 <li class="blogger__item">
-                  <button class="btn-reset blogger__name" aria-roledescription="Блогер"
-                    data-path="none">Константин Прусино</button>
+                  <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Константин
+                    Прусино</button>
                 </li>
                 <li class="blogger__item">
                   <button class="btn-reset blogger__name" aria-roledescription="Блогер" data-path="none">Дмитрий
@@ -1403,7 +1404,7 @@
             </li>
             <li class="guest__item">
               <h3 class="guest__header">
-                Фиологи
+                Филологи
               </h3>
               <ul class="guest__name">
 
@@ -1417,7 +1418,7 @@
           </ul>
           <div class="guest__tab tab">
             <div class="tab__item tab__none" data-target="none">
-              <picture>
+              <picture class="tab__photo">
                 <source media="(min-width: 902px)" srcset="./img/guest/none-tablet.jpg">
                 <source media="(min-width: 576px)" srcset="./img/guest/none-sm-tablet.jpg">
                 <source media="(min-width: 320px)" srcset="./img/guest/none-mobile.jpg">
@@ -1425,7 +1426,7 @@
               </picture>
             </div>
             <div class="tab__item tab__item-active olga-martynova user" data-target="olga-martynova">
-              <picture>
+              <picture class="tab__photo">
                 <source media="(min-width: 902px)" srcset="./img/guest/olga-tablet.jpg">
                 <source media="(min-width: 576px)" srcset="./img/guest/olga-sm-tablet.jpg">
                 <source media="(min-width: 320px)" srcset="./img/guest/olga-mobile.jpg">
@@ -1849,7 +1850,171 @@
         </div>
       </div>
     </section>
+    <section id="about-us" class="info">
+      <div class="container info__container">
+        <div class="info__content">
+          <h2 class="title info__title">
+            О&nbsp;нас
+          </h2>
+          <strong class="info__strong">
+            Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!
+          </strong>
+          <p class="info__text">
+            Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен каждый слушатель, поэтому
+            вы&nbsp;можете поделиться обратной связью о&nbsp;наших передачах, темах, подборках и&nbsp;вообще обо всём!
+            Это&nbsp;можно&nbsp;сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети
+            в&nbsp;подвале
+            сайта. Спасибо! Услышимся!:)
+          </p>
+        </div>
+        <div class="info__slider">
+          <div class="info__swiper swiper speaker">
+              <ul class="list-reset speaker__list swiper-wrapper">
+                <li class="speaker__item swiper-slide">
+                  <div class="speaker__content">
+                    <picture class="speaker__picture">
+                      <source media="(min-width: 902px) and (max-width: 1200px)" srcset="./img/about-us/dmitriy-tablet.jpg">
+                      <source media="(min-width: 576px) and (max-width: 902px)" srcset="./img/about-us/dmitriy-sm-tablet.jpg">
+                      <source media="(min-width: 320px) and (max-width: 576px)" srcset="./img/about-us/dmitriy-mobile.jpg">
+                      <img src="./img/about-us/dmitriy-desktop.jpg" alt="Портрет Дмитрия Гутенберга">
+                    </picture>
+                    <div class="speaker__text">
+                      <strong class="speaker__name">
+                        Дмитрий Гутенберг
+                      </strong>
+                      <p class="speaker__descr">
+                        Эксперт (ну, почти) по&nbsp;всем вопросам (почти)
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="speaker__item swiper-slide">
+                  <div class="speaker__content">
+                    <picture class="speaker__picture">
+                      <source media="(min-width: 902px) and (max-width: 1200px)" srcset="./img/about-us/anna-tablet.jpg">
+                      <source media="(min-width: 576px) and (max-width: 902px)" srcset="./img/about-us/anna-sm-tablet.jpg">
+                      <source media="(min-width: 320px) and (max-width: 576px)" srcset="./img/about-us/anna-mobile.jpg">
+                      <img src="./img/about-us/anna-desktop.jpg" alt="Портрет Анны Васильевны">
+                    </picture>
+                    <div class="speaker__text">
+                      <strong class="speaker__name">
+                        Анна Васильева
+                      </strong>
+                      <p class="speaker__descr">
+                        Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="speaker__item swiper-slide">
+                  <div class="speaker__content">
+                    <picture class="speaker__picture">
+                      <source media="(min-width: 902px) and (max-width: 1200px)" srcset="./img/about-us/petr-tablet.jpg">
+                      <source media="(min-width: 320px)" srcset="./img/about-us/petr-sm-tablet.jpg">
+                      <img src="./img/about-us/petr-desktop.jpg" alt="Портрет Петра Дмитриевского">
+                    </picture>
+                    <div class="speaker__text">
+                      <strong class="speaker__name">
+                        Пётр Дмитриевский
+                      </strong>
+                      <p class="speaker__descr">
+                        Господа! Внимание! Благодарю за&nbsp;внимание!
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="speaker__item swiper-slide">
+                  <div class="speaker__content">
+                    <picture class="speaker__picture">
+                      <source media="(min-width: 902px) and (max-width: 1200px)" srcset="./img/about-us/tatyana-tablet.jpg">
+                      <source media="(min-width: 576px) and (max-width: 902px)" srcset="./img/about-us/tatyana-sm-tablet.jpg">
+                      <source media="(min-width: 320px) and (max-width: 576px)" srcset="./img/about-us/tatyana-mobile.jpg">
+                      <img src="./img/about-us/tatyana-desktop.jpg" alt="Портрет Татьяны Флегановой">
+                    </picture>
+                    <div class="speaker__text">
+                      <strong class="speaker__name">
+                        Татьяна Флеганова
+                      </strong>
+                      <p class="speaker__descr">
+                        Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="speaker__item swiper-slide">
+                  <div class="speaker__content">
+                    <picture class="speaker__picture">
+                      <source media="(min-width: 902px) and (max-width: 1200px)" srcset="./img/about-us/fedor-tablet.jpg">
+                      <source media="(min-width: 576px) and (max-width: 902px)" srcset="./img/about-us/fedor-sm-tablet.jpg">
+                      <source media="(min-width: 320px) and (max-width: 576px)" srcset="./img/about-us/fedor-mobile.jpg">
+                      <img src="./img/about-us/fedor-desktop.jpg" alt="Портрет Федора Прокопьева">
+                    </picture>
+                    <div class="speaker__text">
+                      <strong class="speaker__name">
+                        Фёдор Прокопьев
+                      </strong>
+                      <p class="speaker__descr">
+                        Привет! Я&nbsp;фотограф, музыкант, ведущий
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="speaker__item swiper-slide">
+                  <div class="speaker__content">
+                    <picture class="speaker__picture">
+                      <source media="(min-width: 902px) and (max-width: 1200px)" srcset="./img/about-us/svetlana-tablet.jpg">
+                      <source media="(min-width: 576px) and (max-width: 902px)" srcset="./img/about-us/svetlana-sm-tablet.jpg">
+                      <source media="(min-width: 320px) and (max-width: 576px)" srcset="./img/about-us/svetlana-mobile.jpg">
+                      <img src="./img/about-us/svetlana-desktop.jpg" alt="Портрет Светланы Кортневой">
+                    </picture>
+                    <div class="speaker__text">
+                      <strong class="speaker__name">
+                        Светлана Кортнева
+                      </strong>
+                      <p class="speaker__descr">
+                        Художник-оформитель. Оформляю
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="info__form">
+          <form id="form" class="info__data">
+            <label for="comment" class="info__label-textarea">
+              <textarea id="comment" name="comment" class="info__textarea" placeholder="Что скажете?"
+                data-validate-field="comment"></textarea>
+            </label>
+            <div class="info__input">
+              <label for="name" class="info__field-name">
+                <input name='name' id="name" type="text" placeholder="Имя" class="info__field"
+                  data-validate-field="name" autocomplete="off">
+              </label>
+              <label for="mail" class="info__field-mail">
+                <input name="mail" id="mail" type="email" placeholder="Email" class="info__field"
+                  data-validate-field="email" autocomplete="off">
+              </label>
+            </div>
+            <button type="submit" class="btn-reset info__btn">
+              Отправить
+            </button>
+            <label for="checkbox" class="info__checkbox">
+              <input class="info__checkbox-real" type="checkbox" id="checkbox" name="checkbox"
+                data-validate-field="checkbox" required>
+              <span class="info__checkbox-custom">
+                Согласен на&nbsp;обработку персональных данных
+              </span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
+  <script src="./libs/scripts/justvalidate-min.js"></script>
+  <script src="./libs/scripts/swiper-bundle-min.js"></script>
   <script src="./libs/scripts/simplebar-min.js"></script>
   <script src="./libs/scripts/jquary-min.js"></script>
   <script src="./libs/scripts/jquery-ui.min.js"></script>
