@@ -13,16 +13,16 @@ document.querySelector('.burger').addEventListener('click',
     document.querySelector('.top__nav').classList.toggle('header__top-active');
     document.querySelector('.bottom__nav').classList.toggle('header__top-active');
     document.body.classList.toggle('stop-scroll');
+    document.querySelectorAll('nav a').forEach(function (el) {
+      el.addEventListener('click', function () {
+        document.querySelector('.burger').classList.remove('open');
+        document.querySelector('.header').classList.remove('header-active');
+        document.querySelector('.top__nav').classList.remove('header__top-active');
+        document.querySelector('.bottom__nav').classList.remove('header__top-active');
+        document.body.classList.remove('stop-scroll');
+      });
+    });
   });
-document.querySelectorAll('nav a').forEach(function (el) {
-  el.addEventListener('click', function () {
-    document.querySelector('.burger').classList.remove('open');
-    document.querySelector('.header').classList.toggle('header-active');
-    document.querySelector('.top__nav').classList.remove('header__top-active');
-    document.querySelector('.bottom__nav').classList.remove('header__top-active');
-    document.body.classList.remove('stop-scroll');
-  });
-});
 
 document.querySelector('.top__search').addEventListener('click', (e) => {
   document.querySelector('.top__input').classList.toggle('top__form-visible');

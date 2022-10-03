@@ -263,6 +263,7 @@ body {
 }
 
 .top__link {
+  padding: 4px 10px;
   outline: none;
   font-style: normal;
   font-weight: 400;
@@ -288,7 +289,7 @@ body {
 }
 
 .top__item:not(:last-child) {
-  margin-right: 59px;
+  margin-right: 39px;
 }
 
 .top__wrapper {
@@ -347,6 +348,7 @@ body {
 
 .top__search {
   outline: none;
+  margin-top: 5px;
   margin-right: 24px;
 }
 
@@ -401,7 +403,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 45px;
+  padding: 0 35px;
 }
 
 .bottom__list {
@@ -409,6 +411,7 @@ body {
 }
 
 .bottom__link {
+  padding: 4px 10px;
   outline: none;
   font-style: normal;
   font-weight: 400;
@@ -429,11 +432,12 @@ body {
 }
 
 .bottom__link:active {
+  background-color: transparent;
   color: var(--color-bold-purple);
 }
 
 .bottom__item:not(:last-child) {
-  margin-right: 53px;
+  margin-right: 33px;
 }
 
 .bottom__wrapper {
@@ -546,6 +550,11 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: var(--color-regular-purple);
+}
+
+.bottom__image {
+  margin-right: 9px;
+  margin-left: 12px;
 }
 
 /* hero */
