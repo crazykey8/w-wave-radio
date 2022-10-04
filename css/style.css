@@ -2372,8 +2372,8 @@ path {
   background-color: transparent;
 }
 
-.just-validate-error-field {
-  border-color: var(--color-regular-red) !important;
+.error-field .just-validate-error-field {
+  border-color: var(--color-regular-red);
 }
 
 .info__btn {
@@ -2483,4 +2483,119 @@ path {
 
 .info__checkbox-real:active+.info__checkbox-custom::before {
   border-color: var(--color-white);
+}
+
+/* footer */
+
+.footer {
+  padding-top: 94px;
+  background-color: var(--color-semibold-blue);
+}
+
+.footer__top {
+  position: relative;
+  padding-bottom: 75px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+}
+
+.footer__icon:first-child {
+  margin-left: 2px;
+}
+
+.footer__icon:not(:last-child) {
+  margin-right: 25px;
+}
+
+.footer__network {
+  outline: none;
+}
+
+.footer__network svg {
+  fill: var(--color-regular-gray);
+  transition: all .1s ease-in-out;
+}
+
+.footer__network:focus svg {
+  fill: var(--color-light-purple);
+}
+
+.footer__network:hover svg {
+  fill: var(--color-regular-purple);
+}
+
+.footer__network:active svg {
+  fill: var(--color-bold-purple);
+}
+
+.footer__right {
+  max-width: 447px;
+}
+
+.footer__list {
+  columns: 3;
+  column-gap: 107px;
+}
+
+.footer__item {
+  margin-bottom: 17px;
+}
+
+.footer__item:nth-last-child(-n+3) {
+  padding-left: 11px;
+}
+
+.footer__link {
+  outline: none;
+  padding: 2px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--color-white);
+  transition: all .2s ease-in-out;
+}
+
+.footer__link:focus {
+  background-color: var(--color-light-purple);
+  color: var(--color-white);
+}
+
+.footer__link:hover {
+  background-color: transparent;
+  color: var(--color-light-purple);
+}
+
+.footer__link:active {
+  background-color: transparent;
+  color: var(--color-regular-purple);
+}
+
+.footer__bottom {
+  padding-top: 20px;
+  padding-bottom: 11px;
+  text-align: center;
+  background-image: url('../img/footer/spiral.png');
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.footer__copy {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 103.34%;
+  color: var(--color-bold-gray);
 }

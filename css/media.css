@@ -349,6 +349,18 @@
   .info__field-mail {
     width: 397px;
   }
+
+  .footer__container {
+    padding: 0 39px;
+  }
+
+  .footer__logo {
+    margin-bottom: 18px;
+  }
+
+  .footer__bottom {
+    padding-bottom: 13px;
+  }
 }
 
 @media (max-width: 1010px) {
@@ -665,6 +677,7 @@
   }
 
   .info {
+    padding-bottom: 93px;
     background-image: url('../img/about-us/spiral-long.png');
     background-repeat: no-repeat;
     background-position: left 32%;
@@ -708,6 +721,57 @@
 
   .info__field-mail {
     width: 100%;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    padding: 0 18px;
+  }
+
+  .footer {
+    padding-top: 94px;
+  }
+
+  .footer__logo {
+    margin-bottom: 17px;
+  }
+
+  .footer__left {
+    text-align: center;
+    margin-bottom: 77px;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+
+  .footer__icon:first-child {
+    margin-right: 0;
+  }
+
+  .footer__icon:not(:last-child) {
+    margin-right: 27px;
+  }
+
+  .footer__network svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer__right {
+    max-width: 592px;
+  }
+
+  .footer__list {
+    column-gap: 152px;
+  }
+
+  .footer__item {
+    margin-bottom: 27px;
+  }
+
+  .footer__top {
+    padding-bottom: 52px;
   }
 }
 
@@ -1475,7 +1539,7 @@
 
   .info {
     padding-top: 53px;
-    padding-bottom: 43px;
+    padding-bottom: 48px;
     background-image: none;
   }
 
@@ -1570,6 +1634,56 @@
 
   .just-validate-error-label {
     bottom: -14px;
+  }
+
+  .footer {
+    padding-top: 54px;
+  }
+
+  .footer__container {
+    padding: 0 32px;
+  }
+
+  .footer__top {
+    padding-bottom: 36px;
+  }
+
+  .footer__top::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 216px;
+    bottom: 9px;
+    background-color: var(--color-bold-blue);
+  }
+
+  .footer__right {
+    z-index: 1;
+  }
+
+  .footer__link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .footer__list {
+    columns: 2;
+    column-gap: 28px;
+  }
+
+  .footer__item {
+    margin-bottom: 18px;
+  }
+
+  .footer__item:nth-last-child(-n+3) {
+    padding-left: 0;
+  }
+
+  .footer__copy {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 103.34%;
   }
 
 }
