@@ -225,7 +225,7 @@ body {
   color: var(--color-bold-blue);
 }
 
-.up__auth:focus {
+.up__auth:focus-visible {
   background-color: var(--color-light-purple);
   color: var(--color-bold-blue);
 }
@@ -273,7 +273,7 @@ body {
   transition: all .2s ease-in-out;
 }
 
-.top__link:focus {
+.top__link:focus-visible {
   background-color: var(--color-light-purple);
   color: var(--color-white);
 }
@@ -330,7 +330,7 @@ body {
   transition: all .2s ease-in-out;
 }
 
-.top__input:focus,
+.top__input:focus-visible,
 .top__input:hover {
   border-color: var(--color-light-purple);
 }
@@ -357,7 +357,7 @@ body {
   transition: stroke .2s ease-in-out;
 }
 
-.top__search:focus svg,
+.top__search:focus-visible svg,
 .top__search:hover svg {
   stroke: var(--color-light-purple);
 }
@@ -379,7 +379,7 @@ body {
   transition: border-color .2s ease-in-out, color .2s ease-in-out, background-color .2s ease-in-out;
 }
 
-.top__auth:focus {
+.top__auth:focus-visible {
   background-color: var(--color-light-purple);
   color: var(--color-bold-blue);
 }
@@ -421,7 +421,7 @@ body {
   transition: all .2s ease-in-out;
 }
 
-.bottom__link:focus {
+.bottom__link:focus-visible {
   background-color: var(--color-light-purple);
   color: var(--color-white);
 }
@@ -469,7 +469,7 @@ body {
   display: block;
 }
 
-.btn__playaudio:focus svg {
+.btn__playaudio:focus-visible svg {
   fill: var(--color-light-purple);
 }
 
@@ -618,7 +618,7 @@ body {
   transition: width .2s ease-in-out, background-color .2s ease-in-out, padding .2s ease-in-out;
 }
 
-.hero__descr-link:focus {
+.hero__descr-link:focus-visible {
   padding: 3px;
   background-color: var(--color-light-purple);
   color: var(--color-white);
@@ -660,7 +660,7 @@ body {
   transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
 }
 
-.hero__btn:focus {
+.hero__btn:focus-visible {
   background-color: var(--color-light-purple);
 }
 
@@ -722,6 +722,7 @@ body {
 .podcast__content img {
   display: block;
   height: 100%;
+  object-fit: cover;
 }
 
 .podcast__background {
@@ -819,15 +820,15 @@ body {
   transition: fill .2s ease-in-out;
 }
 
-.podcast__event:focus svg circle {
+.podcast__event:focus-visible svg circle {
   stroke: var(--color-light-purple);
 }
 
-.podcast__event:focus svg path {
+.podcast__event:focus-visible svg path {
   fill: var(--color-light-purple);
 }
 
-.podcast__event:focus svg rect {
+.podcast__event:focus-visible svg rect {
   fill: var(--color-light-purple);
 }
 
@@ -897,12 +898,12 @@ body {
   transition: fill .2s ease-in-out, stroke .2s ease-in-out;
 }
 
-.podcast__btn-like:focus {
+.podcast__btn-like:focus-visible {
   background-color: var(--color-light-purple);
   color: var(--color-white);
 }
 
-.podcast__btn-like:focus svg path {
+.podcast__btn-like:focus-visible svg path {
   fill: transparent;
   stroke: var(--color-white);
 }
@@ -933,12 +934,12 @@ body {
   transition: fill .2s ease-in-out, stroke .2s ease-in-out;
 }
 
-.podcast__btn-share:focus {
+.podcast__btn-share:focus-visible {
   background-color: var(--color-light-purple);
   color: var(--color-white);
 }
 
-.podcast__btn-share:focus svg path {
+.podcast__btn-share:focus-visible svg path {
   fill: transparent;
   stroke: var(--color-white);
 }
@@ -983,7 +984,7 @@ body {
   transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out;
 }
 
-.podcast__btn:focus {
+.podcast__btn:focus-visible {
   background-color: var(--color-light-purple);
   border-color: var(--color-regular-purple);
   color: var(--color-white);
@@ -1249,6 +1250,7 @@ body {
   align-items: center;
   width: max-content;
   outline: none;
+  margin-top: 10px;
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
@@ -1259,15 +1261,18 @@ body {
 
 .broadcast__more svg {
   fill: var(--color-bold-blue);
+  width: 26px;
+  transition: all .2s ease-in-out;
 }
 
-.broadcast__more:focus {
+.broadcast__more:focus-visible {
   padding: 2px;
   background-color: var(--color-light-purple);
   color: var(--color-white);
 }
 
-.broadcast__more:focus svg {
+.broadcast__more:focus-visible svg {
+  width: 26px;
   fill: var(--color-white);
 }
 
@@ -1279,6 +1284,7 @@ body {
 
 .broadcast__more:hover svg {
   fill: var(--color-regular-purple);
+  width: 34px;
 }
 
 .broadcast__more:active {
@@ -1289,6 +1295,7 @@ body {
 
 .broadcast__more:active svg {
   fill: var(--color-bold-purple);
+  width: 34px;
 }
 
 .broadcast__more::after {
@@ -1317,7 +1324,7 @@ body {
   inset: -5px;
 }
 
-.broadcast__more:focus::before {
+.broadcast__more:focus-visible::before {
   border: 1px solid var(--color-regular-purple);
 }
 
@@ -1352,7 +1359,7 @@ body {
   transition: border-color .2s ease-in-out, color .2s ease-in-out, background-color .2s ease-in-out;
 }
 
-.broadcast__btn-archive:focus {
+.broadcast__btn-archive:focus-visible {
   background-color: var(--color-light-purple);
   color: var(--color-bold-blue);
 }
@@ -1476,7 +1483,7 @@ path {
   transition: all .2s ease-in-out;
 }
 
-.guest__header:focus::before {
+.guest__header:focus-visible::before {
   background-color: var(--color-regular-gray);
   opacity: 0.1;
 }
@@ -1527,7 +1534,7 @@ path {
   transition: all .2s ease-in-out;
 }
 
-.blogger__name:focus {
+.blogger__name:focus-visible {
   background-color: var(--color-light-purple);
   color: var(--color-white);
 }
@@ -1624,7 +1631,7 @@ path {
   transition: all .2s ease-in-out;
 }
 
-.user__btn:focus {
+.user__btn:focus-visible {
   border-color: var(--color-regular-purple);
   background-color: var(--color-regular-purple);
   color: var(--color-white);
@@ -1651,7 +1658,7 @@ path {
   transition: all .1s ease-in-out;
 }
 
-.user__link:focus svg {
+.user__link:focus-visible svg {
   fill: var(--color-light-purple);
 }
 
@@ -1767,11 +1774,11 @@ path {
   border-color: var(--color-bold-purple);
 }
 
-.genre__checkbox-real:focus+.genre__text::before {
+.genre__checkbox-real:focus-visible+.genre__text::before {
   border-color: var(--color-bold-purple);
 }
 
-.genre__checkbox-real:focus+.genre__text::after {
+.genre__checkbox-real:focus-visible+.genre__text::after {
   background-color: var(--color-regular-gray);
 }
 
@@ -1824,30 +1831,34 @@ path {
   transition: all .2s ease-in-out;
 }
 
-.clip__content:focus::before {
+.clip__content:focus-visible::before {
   opacity: 0.8;
 }
 
-.clip__content:focus::after {
-  opacity: 1;
-}
-
-.clip__content:focus .clip__text {
+.clip__content:focus-visible .clip__text {
   background-color: var(--color-light-purple);
   border-color: var(--color-light-purple);
 }
 
-.clip__content:focus .clip__title,
-.clip__content:focus .clip__info {
+.clip__content:focus-visible .clip__title,
+.clip__content:focus-visible .clip__info {
   color: var(--color-bold-blue);
+}
+
+.clip__content:focus-visible .clip__play {
+  opacity: 1;
+}
+
+.clip__content:focus-visible.clip__country-ru::after {
+  opacity: 0.4;
+}
+
+.clip__content:focus-visible.clip__country-uk::after {
+  opacity: 0.4;
 }
 
 .clip__content:hover::before {
   opacity: 0.8;
-}
-
-.clip__content:hover::after {
-  opacity: 1;
 }
 
 .clip__content:hover .clip__text {
@@ -1860,6 +1871,18 @@ path {
   color: var(--color-white);
 }
 
+.clip__content:hover .clip__play {
+  opacity: 1;
+}
+
+.clip__content:hover.clip__country-ru::after {
+  opacity: 0.4;
+}
+
+.clip__content:hover.clip__country-uk::after {
+  opacity: 0.4;
+}
+
 .clip__content:active .clip__text {
   background-color: var(--color-bold-purple);
   border-color: var(--color-bold-purple);
@@ -1870,8 +1893,18 @@ path {
   color: var(--color-white);
 }
 
-.clip__content:active::after {
-  background-image: url('../img/playlist/play_btn-big.png');
+.clip__content:active .clip__play {
+  opacity: 1;
+  width: 56px;
+  height: 56px;
+}
+
+.clip__content:active.clip__country-ru::after {
+  opacity: 0.4;
+}
+
+.clip__content:active.clip__country-uk::after {
+  opacity: 0.4;
 }
 
 .clip__background {
@@ -1881,30 +1914,44 @@ path {
   background-color: var(--color-bold-gray);
 }
 
-.clip__content::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  opacity: 0;
-  background-image: url('../img/playlist/play_btn.png');
-  background-position: center 30%;
-  background-repeat: no-repeat;
-  transition: all .2s ease-in-out;
-}
-
 .clip__background img {
   display: block;
   height: 100%;
 }
 
-.clip__country {
+.clip__play {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  z-index: 3;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+
+.clip__country-ru::after {
+  content: '';
   position: absolute;
   right: 0;
+  width: 24px;
+  height: 20px;
+  z-index: 3;
+  background-image: url('../img/playlist/ru-flag.jpg');
+  transition: all .2s ease-in-out;
+}
+
+.clip__country-uk::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 24px;
+  height: 20px;
+  z-index: 3;
+  background-image: url('../img/playlist/uk-flag.jpg');
+  transition: all .2s ease-in-out;
 }
 
 .clip__text {
+  position: relative;
   border: 1px solid var(--color-light-gray);
   padding: 16px;
   transition: all .2s ease-in-out;
@@ -2056,19 +2103,19 @@ path {
   transition: all .2s ease-in-out;
 }
 
-.advertising__btn:focus svg path:nth-child(1) {
+.advertising__btn:focus-visible svg path:nth-child(1) {
   fill: var(--color-light-yellow);
 }
 
-.advertising__btn:focus svg path {
+.advertising__btn:focus-visible svg path {
   fill: var(--color-bold-blue);
 }
 
-.advertising__btn:focus .advertising__btn-text {
+.advertising__btn:focus-visible .advertising__btn-text {
   color: var(--color-bold-blue);
 }
 
-.advertising__btn:focus {
+.advertising__btn:focus-visible {
   background-color: var(--color-bold-yellow);
 }
 
@@ -2171,7 +2218,7 @@ path {
 
 .swiper-button-next::after {
   content: '';
-  background-image: url('../img/about-us/btn-next.png');
+  background-image: url('../img/about-us/btn-next.svg');
   width: 50px;
   height: 50px;
   transition: all .2s ease-in-out;
@@ -2197,7 +2244,7 @@ path {
 
 .swiper-button-prev::after {
   content: '';
-  background-image: url('../img/about-us/btn-prev.png');
+  background-image: url('../img/about-us/btn-prev.svg');
   width: 50px;
   height: 50px;
   transition: all .2s ease-in-out;
@@ -2282,7 +2329,7 @@ path {
   color: var(--color-bold-gray);
 }
 
-.info__textarea:focus {
+.info__textarea:focus-visible {
   border-color: var(--color-light-purple);
   background-color: var(--color-semibold-blue);
 }
@@ -2357,7 +2404,7 @@ path {
   color: var(--color-bold-gray);
 }
 
-.info__field:focus {
+.info__field:focus-visible {
   border-color: var(--color-light-purple);
   background-color: var(--color-semibold-blue);
 }
@@ -2391,7 +2438,7 @@ path {
   transition: all .2s ease-in-out;
 }
 
-.info__btn:focus {
+.info__btn:focus-visible {
   background-color: var(--color-light-purple);
 }
 
@@ -2476,7 +2523,7 @@ path {
   border-color: var(--color-regular-red);
 }
 
-.info__checkbox-real:focus+.info__checkbox-custom::before,
+.info__checkbox-real:focus-visible+.info__checkbox-custom::before,
 .info__checkbox-real:hover+.info__checkbox-custom::before {
   border-color: var(--color-light-purple);
 }
@@ -2529,7 +2576,7 @@ path {
   transition: all .1s ease-in-out;
 }
 
-.footer__network:focus svg {
+.footer__network:focus-visible svg {
   fill: var(--color-light-purple);
 }
 
@@ -2568,7 +2615,7 @@ path {
   transition: all .2s ease-in-out;
 }
 
-.footer__link:focus {
+.footer__link:focus-visible {
   background-color: var(--color-light-purple);
   color: var(--color-white);
 }

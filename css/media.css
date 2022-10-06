@@ -225,8 +225,15 @@
     width: 112px;
   }
 
-  .clip__content::after {
-    background-position: 15% 50%;
+  .clip__country-ru::after,
+  .clip__country-uk::after {
+    right: auto;
+    left: 0;
+  }
+
+  .clip__play {
+    top: 28%;
+    left: 12%;
   }
 
   .playlist__clip {
@@ -249,12 +256,6 @@
     flex-direction: row;
     min-height: 113px;
     min-width: 255px;
-  }
-
-  .clip__country {
-    position: absolute;
-    right: 0;
-    left: 0;
   }
 
   .clip__background {
@@ -1286,10 +1287,6 @@
     line-height: 16px;
   }
 
-  .guest__item:nth-last-child(2) {
-    display: none;
-  }
-
   .tab__photo {
     height: 160px;
   }
@@ -1434,12 +1431,15 @@
     min-height: 159px;
   }
 
-  .clip__country {
-    left: 88px;
+  .clip__country-ru::after,
+  .clip__country-uk::after {
+    right: 0;
+    left: auto;
   }
 
-  .clip__content::after {
-    background-position: 50% 30%;
+  .clip__play {
+    top: 20%;
+    left: 27%;
   }
 
   .playlist__clip {
