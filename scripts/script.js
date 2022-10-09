@@ -1,5 +1,27 @@
 
-const anchors = document.querySelectorAll('a[href*="#"]')
+const popupBtn = document.querySelectorAll('.popup-btn');
+const popupOverlay = document.querySelector('.popup__body');
+const popup = document.querySelector('.popup');
+popupBtn.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    let path = e.currentTarget.getAttribute('data-path');
+    popup.classList.add('open')
+    document.querySelector(`[data-target="${path}"]`).classList.add('open');
+    document.body.classList.toggle('stop-scroll');
+  })
+});
+popup.addEventListener('click', (e) => {
+  if (e.target == popupOverlay) {
+    popup.classList.remove('open')
+    document.body.classList.toggle('stop-scroll');
+  };
+  if (e.target == document.querySelector('.popup__close svg')) {
+    popup.classList.remove('open')
+    document.body.classList.toggle('stop-scroll');
+  };
+});
+
+const anchors = document.querySelectorAll('nav a')
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
     e.preventDefault()
@@ -101,6 +123,12 @@ document.querySelectorAll('.blogger__name').forEach(function (tabsBtn) {
       tabsBtn.classList.remove('tab__item-active')
     });
     document.querySelector(`[data-target="${path}"]`).classList.add('tab__item-active');
+    if (/iPhone|Android/i.test(navigator.userAgent)) {
+      document.querySelector(`[data-target="${path}"]`).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    };
   });
 });
 
@@ -167,5 +195,20 @@ validation
     {
       rule: 'required',
       errorMessage: 'Вы забыли оставить отзыв'
+    }
+  ]);
+
+const popupvalidation = new JustValidate('#popup-form');
+popupvalidation
+  .addField('#login', [
+    {
+      rule: 'required',
+      errorMessage: 'Вы забыли ввести логин'
+    },
+  ])
+  .addField('#password', [
+    {
+      rule: 'required',
+      errorMessage: 'Вы забыли ввести пароль'
     }
   ]);

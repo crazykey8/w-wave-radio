@@ -774,6 +774,19 @@
   .footer__top {
     padding-bottom: 52px;
   }
+
+  .popup__content {
+    padding: 60px 40px;
+    width: 539px;
+  }
+
+  .popup__sign-up {
+    font-size: 19px;
+  }
+
+  .popup__input {
+    width: 100%;
+  }
 }
 
 @media (max-width: 740px) {
@@ -1684,6 +1697,78 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 103.34%;
+  }
+
+  .popup__body {
+    padding: 55px 10px;
+  }
+
+  .popup__content {
+    width: 256px;
+    padding: 40px 20px;
+  }
+
+  .popup__close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .popup__close svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .popup__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+  .popup__sign-up {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 8px;
+    color: var(--color-bold-gray);
+  }
+
+  .popup__link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  .popup__label {
+    margin-bottom: 20px;
+  }
+
+  .popup__input {
+    height: 40px;
+    padding: 12px 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .popup__btn {
+    max-width: 160px;
+    padding: 12px 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .popup__login-with {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--color-bold-gray);
+  }
+
+  .popup__list {
+    max-width: 216px;
   }
 
 }
