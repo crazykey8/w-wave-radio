@@ -196,7 +196,20 @@ validation
       rule: 'required',
       errorMessage: 'Вы забыли оставить отзыв'
     }
-  ]);
+  ]).onSuccess((event) => {
+    let formData = new FormData(event.target);
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          alert('Письмо отправлено!')
+        }
+      }
+    }
+    xhr.open('POST', './mail.php', true);
+    xhr.send(formData);
+    event.target.reset();
+  });
 
 const popupvalidation = new JustValidate('#popup-form');
 popupvalidation
