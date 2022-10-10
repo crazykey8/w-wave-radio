@@ -6,7 +6,7 @@ require './phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
-$email = $_POST['email'];
+$email = $_POST['mail'];
 $text = $_POST['comment'];
 
 // Формирование самого письма
@@ -14,7 +14,7 @@ $title = "Обратная связь от пользователя $name";
 $body = "
 <h2>Новое письмо</h2>
 <b>Имя:</b> $name<br>
-<b>Почта:</b> $email<br><br>
+<b>Почта:</b> $email<br>
 <b>Сообщение:</b><br>$text
 ";
 
@@ -28,12 +28,12 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'sergey.komarov.2004@mail.ru'; // Логин на почте
-    $mail->Password   = 'xUyhNhnhcysWD8NuCuXP'; // Пароль на почте
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
-    $mail->setFrom('sergey.komarov.2004@mail.ru', 'Сергей'); // Адрес самой почты и имя отправителя
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'korolnyy2@gmail.com'; // Логин на почте
+    $mail->Password   = 'lszuhflrpgjrdjka'; // Пароль на почте
+    $mail->SMTPSecure = 'tls';
+    $mail->Port       = 587;
+    $mail->setFrom('korolnyy2@gmail.com', 'Сергей'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress($email);
